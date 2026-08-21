@@ -30,6 +30,14 @@ describe("metadata resolver", () => {
     await expect(resolveMetadata(`${url}/stream`, { sidecar: { url: `${url}/xml` } })).resolves.toMatchObject({ track: { artist: "Bowie", title: "Heroes" }, resolution: { method: "configured-sidecar" } });
     await expect(resolveMetadata(`${url}/stream`, { sidecar: { url: `${url}/text` } })).resolves.toMatchObject({ track: { artist: "Miles Davis", title: "So What" }, resolution: { method: "configured-sidecar" } });
   });
+  it.each([
+    ["HTML", "/html", "text/html", "<html>offline</html>"],
+    ["offline JSON", "/offline", "application/json", '{"status":"offline"}'],
+    ["empty JSON", "/empty", "application/json", "{}"]
+  ])("treats %s sidecars as metadata unavailable", async (_, path, contentType, body) => {
+    const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); response.writeHead(200, { "content-type": contentType }); response.end(body); });
+    await expect(resolveMetadata(`${url}/stream`, { sidecar: { url: `${url}${path}` } })).resolves.toMatchObject({ unresolved: true, attempts: [{ method: "embedded-icy", outcome: "metadata-unavailable" }, { method: "configured-sidecar", outcome: "metadata-unavailable" }] });
+  });
   it("returns unresolved with compact fallback attempts", async () => {
     const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); response.writeHead(503); response.end(); });
     await expect(resolveMetadata(`${url}/stream`, { sidecar: { url: `${url}/sidecar` } })).resolves.toMatchObject({ unresolved: true, attempts: [{ method: "embedded-icy", outcome: "metadata-unavailable" }, { method: "configured-sidecar", outcome: "http-error" }] });

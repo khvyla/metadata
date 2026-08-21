@@ -88,7 +88,7 @@ function requestSidecar(url: string, settings: Required<SidecarSource>, redirect
         return requestSidecar(target.href, settings, redirects + 1).then(finish);
       }
       if (status < 200 || status >= 300) { response.destroy(); return finish(invalid("http-error")); }
-      if (html(response.headers["content-type"])) { response.destroy(); return finish(invalid("not-audio")); }
+      if (html(response.headers["content-type"])) { response.destroy(); return finish(invalid("metadata-unavailable")); }
       let bytesRead = 0;
       const chunks: Buffer[] = [];
       response.on("data", (chunk: Buffer) => {
@@ -101,7 +101,9 @@ function requestSidecar(url: string, settings: Required<SidecarSource>, redirect
         if (settled) return;
         const raw = Buffer.concat(chunks).toString("utf8");
         if (!raw.trim()) return finish(invalid("metadata-unavailable"));
-        finish({ metadata: processMetadata(raw) as CanonicalMetadata, outcome: "resolved" });
+        const metadata = processMetadata(raw) as CanonicalMetadata;
+        if (!metadata.track?.artist?.trim() || !metadata.track?.title?.trim()) return finish(invalid("metadata-unavailable"));
+        finish({ metadata, outcome: "resolved" });
       });
       response.on("error", () => finish(invalid("unreachable")));
     });
