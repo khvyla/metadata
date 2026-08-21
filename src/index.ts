@@ -5,4 +5,4 @@ export { isStreamMetadataError, readStreamMetadata } from "./transport/icy";
 export { resolveMetadata } from "./resolver";
 export type { BuiltInMetadataFormat, CanonicalMetadata, Detection, MetadataFormat, MetadataParser, ParseOptions, ProcessOptions } from "./core/types";
 export type { StreamMetadata, StreamMetadataError, StreamMetadataErrorCategory, StreamMetadataOptions, StreamMetadataResult, StreamTransportHeaders } from "./transport/icy";
-export type { BuiltInResolutionMethod, ResolutionAttempt, ResolutionMethod, ResolveMetadataOptions, ResolveMetadataResult, ResolvedMetadata, SidecarSource, UnresolvedMetadata } from "./resolver";
+export type { BuiltInResolutionMethod, NativeDiscoveryOptions, ResolutionAttempt, ResolutionMethod, ResolveMetadataOptions, ResolveMetadataResult, ResolvedMetadata, SidecarSource, UnresolvedMetadata } from "./resolver";
