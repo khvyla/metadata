@@ -1,0 +1,1290 @@
+{
+  "generatedAt": "2026-08-21T20:36:37.846Z",
+  "summary": {
+    "totalStreams": 47,
+    "resolved": 22,
+    "unresolved": 25,
+    "unreachable": 3,
+    "embeddedIcy": 22,
+    "icecastStatus": 0,
+    "shoutcastStatus": 0,
+    "resolutionRate": 0.46808510638297873,
+    "medianResolutionTimeMs": 447
+  },
+  "results": [
+    {
+      "streamUrl": "https://stream85.polskieradio.pl/radio_ukraina/ukraina.stream/playlist.m3u8",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "not-audio"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 209,
+      "airplayReady": false,
+      "unresolvedReason": "not audio",
+      "diagnostics": {
+        "embeddedIcy": "not-audio",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable",
+        "inputHint": "likely-hls-or-playlist"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://radioton-stream26.radiohost.de/radioton-popup2_mp3-192",
+      "reachable": false,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "unreachable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "unreachable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "unreachable"
+        }
+      ],
+      "elapsedMs": 419,
+      "airplayReady": false,
+      "unresolvedReason": "stream unreachable",
+      "diagnostics": {
+        "embeddedIcy": "unreachable",
+        "icecastStatus": "unreachable",
+        "shoutcastStatus": "unreachable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://193.53.83.13:8000/stryi-fm_mp3",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Kozlovskyi",
+      "title": "Krasa Ta Rozluka",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:33.393Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 243,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://listen.radioking.com/radio/528787/stream/587251",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "$ilver $quad",
+      "title": "Алхімік - $ilver $quad,loco flamer, Rubicon, NORD DIVISION, FCK FAMOUS",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:33.636Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 344,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://azurahosting.xtvmedia.pp.ua/listen/dogfm/DogFM.mp3",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Hinder",
+      "title": "The Life",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:33.980Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 213,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://cdn28rpu.radioplayer.ua/ZFM_HD",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 1048,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://31.128.79.192:8000/live",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "S’Express",
+      "title": "Theme from S-Express",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:35.241Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 366,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://stream.radioskovoroda.com:8000/radioskovoroda",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Alexjazz",
+      "title": "Додому (feat. Oksana Maslo & Roman Sheemy)",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:35.607Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 283,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://lada.fm:8000/radio2",
+      "reachable": false,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "unreachable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "unreachable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "unreachable"
+        }
+      ],
+      "elapsedMs": 6364,
+      "airplayReady": false,
+      "unresolvedReason": "stream unreachable",
+      "diagnostics": {
+        "embeddedIcy": "unreachable",
+        "icecastStatus": "unreachable",
+        "shoutcastStatus": "unreachable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://176.102.194.71:44808/radio",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 2343,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "http://195.95.206.28/OK-FM",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 701,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://195.66.79.35:8000/live",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Наталка Карпа",
+      "title": "Літо (Kaminsky Mash Up)",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:45.298Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 123,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://176.105.207.222:8000/BARFM",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Dennis Lloyd",
+      "title": "Reasons",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:45.421Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 283,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://178.93.125.230:8000/newday.mp3",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 405,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "http://193.169.80.7:8001/efir",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 2309,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://3daudiolabs.uk/stream",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "O.Maverick, Bridge_Air",
+      "title": "INDOORKA",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:48.419Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 363,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://radiostream.nakypilo.ua/full",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Konstantin Ionenko Quintet",
+      "title": "Invisible",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:48.782Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 260,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://live2.radioec.com.ua/kiev128s.mp3",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "title": "КОСИВ БАТЬКО КОСИВ Я",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:35:49.042Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 402,
+      "airplayReady": false,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://www.liveradio.es/http://195.182.22.130:8000/Streamogg",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 286,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://cdn28rpu.radioplayer.ua/HR",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 831,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://audio.x-on.com.ua:8443/x-on.mp3",
+      "reachable": false,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "timeout"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "timeout"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "timeout"
+        }
+      ],
+      "elapsedMs": 15028,
+      "airplayReady": false,
+      "unresolvedReason": "timeout",
+      "diagnostics": {
+        "embeddedIcy": "timeout",
+        "icecastStatus": "timeout",
+        "shoutcastStatus": "timeout",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://play.radiotakt.com.ua/",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "not-audio"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 185,
+      "airplayReady": false,
+      "unresolvedReason": "not audio",
+      "diagnostics": {
+        "embeddedIcy": "not-audio",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://icecast.armyfm.com.ua:8443/ArmyFM_320",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "LAZUTKIN, SEVASTYANOV, ARTERIA",
+      "title": "��� �����",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:05.775Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 263,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://stream4.nadaje.com:9888/lux",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "&#1055;&#1110;&#1076;&#1090;&#1088;&#1080;&#1084;&#1072;&#1081; &#1088;&#1072;&#1076;&#1110;&#1086; \"&#1052;&#1080; &#1079; &#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1080;\" 4",
+      "title": "PayPal myzukrainy@gmail.com",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:06.038Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 1096,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://online.z-polus.info/hq",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Beck",
+      "title": "Sexx Laws",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:07.134Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 447,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://stream.zeno.fm/87ca9ngxhchvv",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Максим Бородін",
+      "title": "В Першу Чергу",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:07.581Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 1083,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://cast.mediaonline.net.ua/auto_drive",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 118,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://cast.mediaonline.net.ua/auto_drive320",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 103,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://online.radioplayer.ua/GuliayRadio",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Іван Ганзера",
+      "title": "Метелики",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:08.887Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 476,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://cast.fex.net/djfm_x",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "JONAS BROTHERS & MARSHMELLO",
+      "title": "LEAVE BEFORE YOU LOVE ME",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:09.363Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 355,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "http://91.218.212.84:8000/radionv.mp3",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 4492,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://radio.rai.ua:9000/rai",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 2462,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://stream.chv.ua:8443/acc.mp3",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 4587,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://radio.c4.com.ua:8443/320",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 1978,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://onair.lviv.fm:8443/ternopil.fm.hd",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 2006,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://globalic.stream:1810/stream",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Nayavu",
+      "title": "Дихати",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:25.243Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 552,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://tim-fm.tim.ua/mp3",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 2364,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://complex.in.ua/b128",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 1106,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://complex.in.ua/brodyHD",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 469,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://cast108372.customer.uar.net/live320",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "title": "VilneRADIO.com.ua",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:29.734Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 220,
+      "airplayReady": false,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://complex.in.ua/zhudachivHD",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 577,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://stream320.galychyna.fm/HutsulFM_RP",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "http-error"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 650,
+      "airplayReady": false,
+      "unresolvedReason": "HTTP error",
+      "diagnostics": {
+        "embeddedIcy": "http-error",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://live.radiom.ua/stream_mp3",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "title": "Dj Online",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:31.182Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 198,
+      "airplayReady": false,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://cdn.vsnw.net:8943/kyiv_fm_128k",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "artist": "Kyiv 98FM",
+      "title": "OnAir",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:31.380Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 106,
+      "airplayReady": true,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://stream.zeno.fm/01aa53zvgchvv",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "title": "Fm Галичина",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:31.486Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 1376,
+      "airplayReady": false,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    },
+    {
+      "streamUrl": "https://onair.lviv.fm:8443/lviv.fm",
+      "reachable": true,
+      "resolution": "unresolved",
+      "resolutionMethod": "unresolved",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "icecast-status",
+          "outcome": "metadata-unavailable"
+        },
+        {
+          "method": "shoutcast-status",
+          "outcome": "metadata-unavailable"
+        }
+      ],
+      "elapsedMs": 4579,
+      "airplayReady": false,
+      "unresolvedReason": "native metadata unavailable",
+      "diagnostics": {
+        "embeddedIcy": "metadata-unavailable",
+        "icecastStatus": "metadata-unavailable",
+        "shoutcastStatus": "metadata-unavailable",
+        "nativeMountMatch": "not-observable"
+      },
+      "audioRecoveryCandidate": true
+    },
+    {
+      "streamUrl": "https://icecast.luxnet.ua/luxlviv",
+      "reachable": true,
+      "resolution": "resolved",
+      "resolutionMethod": "embedded-icy",
+      "title": "Unknown",
+      "confidence": 1,
+      "observedAt": "2026-08-21T20:36:37.442Z",
+      "sourceFormat": "icy",
+      "attempts": [
+        {
+          "method": "embedded-icy",
+          "outcome": "resolved"
+        }
+      ],
+      "elapsedMs": 403,
+      "airplayReady": false,
+      "diagnostics": {
+        "embeddedIcy": "resolved",
+        "nativeMountMatch": "not-attempted"
+      },
+      "audioRecoveryCandidate": false
+    }
+  ]
+}

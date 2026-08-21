@@ -23,6 +23,14 @@ export type BenchmarkResult = {
   elapsedMs: number;
   airplayReady: boolean;
   unresolvedReason?: UnresolvedReason;
+  diagnostics: {
+    embeddedIcy?: string;
+    icecastStatus?: string;
+    shoutcastStatus?: string;
+    nativeMountMatch: "not-attempted" | "not-observable";
+    inputHint?: "likely-hls-or-playlist";
+  };
+  audioRecoveryCandidate: boolean;
 };
 export type BenchmarkSummary = {
   totalStreams: number;
@@ -43,7 +51,20 @@ export async function runBenchmark(input: BenchmarkInput, resolver: Resolver = r
   for (const stream of input.streams) {
     const startedAt = Date.now();
     try { results.push(toBenchmarkResult(stream, await resolver(stream.streamUrl), Date.now() - startedAt)); }
-    catch { results.push({ ...stream, reachable: false, resolution: "unresolved", resolutionMethod: "unresolved", attempts: [], elapsedMs: Date.now() - startedAt, airplayReady: false, unresolvedReason: "other/unknown" }); }
+    catch {
+      results.push({
+        ...stream,
+        reachable: false,
+        resolution: "unresolved",
+        resolutionMethod: "unresolved",
+        attempts: [],
+        elapsedMs: Date.now() - startedAt,
+        airplayReady: false,
+        unresolvedReason: "other/unknown",
+        diagnostics: diagnosticsFor(stream.streamUrl, []),
+        audioRecoveryCandidate: false
+      });
+    }
   }
   return results;
 }
@@ -67,6 +88,12 @@ export function summarizeBenchmark(results: BenchmarkResult[]): BenchmarkSummary
 
 export function renderBenchmarkReport(results: BenchmarkResult[], generatedAt = new Date().toISOString()): string {
   const summary = summarizeBenchmark(results);
+  const unresolved = results.filter((result) => result.resolution === "unresolved");
+  const failureModes = Object.entries(countBy(unresolved, (result) => result.unresolvedReason ?? "other/unknown"));
+  const candidates = unresolved.filter((result) => result.audioRecoveryCandidate);
+  const hlsOrPlaylist = unresolved.filter((result) => result.diagnostics.inputHint === "likely-hls-or-playlist");
+  const nonAudio = unresolved.filter((result) => result.unresolvedReason === "not audio");
+  const httpErrors = unresolved.filter((result) => result.unresolvedReason === "HTTP error");
   const lines = [
     "# khvyla. metadata field benchmark",
     "",
@@ -85,6 +112,7 @@ export function renderBenchmarkReport(results: BenchmarkResult[], generatedAt = 
     `| shoutcast-status | ${summary.shoutcastStatus} |`,
     `| Resolution rate | ${(summary.resolutionRate * 100).toFixed(1)}% |`,
     `| Median resolution time | ${summary.medianResolutionTimeMs} ms |`,
+    `| Airplay-ready observations | ${results.filter((result) => result.airplayReady).length} |`,
     "",
     "## Results",
     "",
@@ -94,19 +122,65 @@ export function renderBenchmarkReport(results: BenchmarkResult[], generatedAt = 
     "",
     "## Unresolved streams",
     "",
-    "| Stream URL | Reason | Attempts |",
-    "| --- | --- | --- |",
-    ...results.filter((result) => result.resolution === "unresolved").map((result) => `| ${escapeCell(result.streamUrl)} | ${result.unresolvedReason ?? "other/unknown"} | ${escapeCell(result.attempts.map((attempt) => `${attempt.method}: ${attempt.outcome}`).join(", "))} |`)
+    "| Stream URL | Reachable | Reason | Embedded ICY | Icecast | Shoutcast | Native mount | Input hint | Attempts |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...unresolved.map((result) => `| ${escapeCell(result.streamUrl)} | ${result.reachable ? "yes" : "no"} | ${result.unresolvedReason ?? "other/unknown"} | ${result.diagnostics.embeddedIcy ?? "not attempted"} | ${result.diagnostics.icecastStatus ?? "not attempted"} | ${result.diagnostics.shoutcastStatus ?? "not attempted"} | ${result.diagnostics.nativeMountMatch} | ${result.diagnostics.inputHint ?? ""} | ${escapeCell(result.attempts.map((attempt) => `${attempt.method}: ${attempt.outcome}`).join(", "))} |`),
+    "",
+    "## Failure-mode breakdown",
+    "",
+    "| Observed failure mode | Streams |",
+    "| --- | ---: |",
+    ...failureModes.map(([reason, count]) => `| ${reason} | ${count} |`),
+    "| Ambiguous native mount | not separately observable from the resolver's compact public attempts |",
+    "",
+    "## Candidates for audio recovery",
+    "",
+    candidates.length ? "These streams reached an audio stream with embedded metadata unavailable, but neither native strategy resolved a track." : "None observed.",
+    ...(candidates.length ? ["", ...candidates.map((result) => `- ${result.streamUrl}`)] : []),
+    "",
+    "## Potential protocol/transport gaps",
+    "",
+    ...(hlsOrPlaylist.length ? [`- HLS/playlist-like input URLs unresolved: ${hlsOrPlaylist.length}.`] : []),
+    ...(nonAudio.length ? [`- HTML/non-audio responses observed: ${nonAudio.length}.`] : []),
+    ...(httpErrors.length ? [`- HTTP errors observed: ${httpErrors.length}.`] : []),
+    ...(hlsOrPlaylist.length || nonAudio.length || httpErrors.length ? [] : ["- No recurring protocol/transport pattern was established beyond the recorded unresolved outcomes."]),
+    "",
+    "Native mount matching is intentionally not inferred here: the public resolver attempt outcome does not distinguish an ambiguous/mismatched Icecast mount from other unavailable native metadata."
   ];
   return lines.join("\n") + "\n";
 }
 
 function toBenchmarkResult(stream: BenchmarkStream, result: ResolveMetadataResult, elapsedMs: number): BenchmarkResult {
   if ("unresolved" in result) {
-    return { ...stream, reachable: !result.attempts.some((attempt) => attempt.outcome === "unreachable"), resolution: "unresolved", resolutionMethod: "unresolved", attempts: result.attempts, elapsedMs, airplayReady: false, unresolvedReason: classifyUnresolved(result.attempts) };
+    const reachable = !result.attempts.some((attempt) => attempt.outcome === "unreachable" || attempt.outcome === "timeout");
+    const diagnostics = diagnosticsFor(stream.streamUrl, result.attempts);
+    return {
+      ...stream,
+      reachable,
+      resolution: "unresolved",
+      resolutionMethod: "unresolved",
+      attempts: result.attempts,
+      elapsedMs,
+      airplayReady: false,
+      unresolvedReason: classifyUnresolved(result.attempts),
+      diagnostics,
+      audioRecoveryCandidate: reachable && diagnostics.embeddedIcy === "metadata-unavailable" && !diagnostics.inputHint
+    };
   }
   const airplayReady = Boolean(result.track?.artist?.trim() && result.track?.title?.trim() && result.resolution?.method && result.resolution.confidence !== undefined && result.observation?.observedAt);
-  return { ...stream, reachable: true, resolution: "resolved", resolutionMethod: result.resolution.method as BenchmarkResult["resolutionMethod"], artist: result.track?.artist, title: result.track?.title, confidence: result.resolution.confidence, observedAt: result.observation.observedAt, sourceFormat: result.source.format, attempts: result.attempts, elapsedMs, airplayReady };
+  return { ...stream, reachable: true, resolution: "resolved", resolutionMethod: result.resolution.method as BenchmarkResult["resolutionMethod"], artist: result.track?.artist, title: result.track?.title, confidence: result.resolution.confidence, observedAt: result.observation.observedAt, sourceFormat: result.source.format, attempts: result.attempts, elapsedMs, airplayReady, diagnostics: diagnosticsFor(stream.streamUrl, result.attempts), audioRecoveryCandidate: false };
+}
+
+function diagnosticsFor(streamUrl: string, attempts: ResolutionAttempt[]): BenchmarkResult["diagnostics"] {
+  const outcomeFor = (method: ResolutionAttempt["method"]) => attempts.find((attempt) => attempt.method === method)?.outcome;
+  const icecastStatus = outcomeFor("icecast-status");
+  return {
+    embeddedIcy: outcomeFor("embedded-icy"),
+    icecastStatus,
+    shoutcastStatus: outcomeFor("shoutcast-status"),
+    nativeMountMatch: icecastStatus ? "not-observable" : "not-attempted",
+    inputHint: /\.m3u8?(?:$|[?#])/i.test(streamUrl) ? "likely-hls-or-playlist" : undefined
+  };
 }
 
 function classifyUnresolved(attempts: ResolutionAttempt[]): UnresolvedReason {
@@ -121,6 +195,7 @@ function classifyUnresolved(attempts: ResolutionAttempt[]): UnresolvedReason {
 }
 
 const escapeCell = (value: string | undefined) => (value ?? "").replace(/\|/g, "\\|");
+const countBy = <T>(values: T[], key: (value: T) => string) => values.reduce<Record<string, number>>((counts, value) => ({ ...counts, [key(value)]: (counts[key(value)] ?? 0) + 1 }), {});
 
 function readInput(path: string): BenchmarkInput {
   const value = JSON.parse(readFileSync(path, "utf8")) as BenchmarkInput;

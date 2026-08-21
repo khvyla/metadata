@@ -10,7 +10,8 @@ describe("field benchmark harness", () => {
     });
     expect(summarizeBenchmark(results)).toMatchObject({ totalStreams: 2, resolved: 1, unresolved: 1, unreachable: 1, embeddedIcy: 1, resolutionRate: 0.5 });
     expect(results[0]).toMatchObject({ resolutionMethod: "embedded-icy", airplayReady: true });
-    expect(results[1]).toMatchObject({ unresolvedReason: "stream unreachable" });
+    expect(results[1]).toMatchObject({ unresolvedReason: "stream unreachable", diagnostics: { embeddedIcy: "unreachable", nativeMountMatch: "not-attempted" }, audioRecoveryCandidate: false });
     expect(renderBenchmarkReport(results)).toContain("## Unresolved streams");
+    expect(renderBenchmarkReport(results)).toContain("## Candidates for audio recovery");
   });
 });
