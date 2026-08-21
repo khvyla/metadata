@@ -31,6 +31,21 @@ const metadata = await readStreamMetadata("https://example.com/live");
 
 The reader follows a small number of redirects, uses bounded reads, and returns canonical metadata on success. If a station sends no embedded metadata, it returns `{ error: "metadata-unavailable", ... }`. v0.2 reads embedded ICY metadata only; it does not recover or enrich missing track data. The CLI also supports `npm run cli -- --stream "https://example.com/live"`.
 
+### Metadata resolution
+
+Use the resolver when you want khvyla. to try the available sources in order: embedded ICY first, then an explicitly configured sidecar endpoint.
+
+```ts
+import { resolveMetadata } from "@khvyla/metadata";
+
+const embedded = await resolveMetadata("https://example.com/live");
+const fallback = await resolveMetadata("https://example.com/live", {
+  sidecar: { url: "https://station.example/now-playing" }
+});
+```
+
+Successful results include `resolution.method`, deterministic confidence, and an observation timestamp. When neither source resolves metadata, the result is structured as `{ unresolved: true, attempts: [...] }`. v0.3 only uses configured sidecars; future strategies may include native Icecast/Shoutcast status endpoints, station APIs, and audio recognition. Hosted deployments must add network-level private-address protections before accepting arbitrary public URLs.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.
