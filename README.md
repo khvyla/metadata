@@ -46,6 +46,19 @@ const fallback = await resolveMetadata("https://example.com/live", {
 
 Native discovery is conservative and bounded: it uses only Icecast `/status-json.xsl` and Shoutcast `/stats?sid=1&json=1` on the stream origin, and redirects cannot leave that origin. Successful native results must safely match the stream mount when multiple Icecast sources exist. Audio recognition and metadata recovery are not part of v0.4. Future strategies may include station APIs and audio recognition. Hosted deployments must add network-level private-address protections before accepting arbitrary public URLs.
 
+### Airplay observation quality
+
+Resolved metadata is not necessarily airplay-eligible metadata. The quality gate preserves the original result and evaluates only whether its artist/title are suitable for a future airplay observation:
+
+```ts
+import { assessAirplayEligibility } from "@khvyla/metadata";
+
+assessAirplayEligibility({ track: { artist: "Stan Getz", title: "Misty" } });
+// { eligible: true, reasons: [] }
+```
+
+It deterministically flags missing fields, obvious placeholders, encoding corruption, station identifiers, and service messages. Future audio recognition may recover or verify rejected observations; it is not implemented here.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.
