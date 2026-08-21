@@ -33,7 +33,7 @@ The reader follows a small number of redirects, uses bounded reads, and returns 
 
 ### Metadata resolution
 
-Use the resolver when you want khvyla. to try the available sources in order: embedded ICY first, then an explicitly configured sidecar endpoint.
+Use the resolver when you want khvyla. to try available sources in order: embedded ICY → same-origin native Icecast status → same-origin native Shoutcast status → an explicitly configured sidecar → unresolved.
 
 ```ts
 import { resolveMetadata } from "@khvyla/metadata";
@@ -44,7 +44,7 @@ const fallback = await resolveMetadata("https://example.com/live", {
 });
 ```
 
-Successful results include `resolution.method`, deterministic confidence, and an observation timestamp. When neither source resolves metadata, the result is structured as `{ unresolved: true, attempts: [...] }`. v0.3 only uses configured sidecars; future strategies may include native Icecast/Shoutcast status endpoints, station APIs, and audio recognition. Hosted deployments must add network-level private-address protections before accepting arbitrary public URLs.
+Native discovery is conservative and bounded: it uses only Icecast `/status-json.xsl` and Shoutcast `/stats?sid=1&json=1` on the stream origin, and redirects cannot leave that origin. Successful native results must safely match the stream mount when multiple Icecast sources exist. Audio recognition and metadata recovery are not part of v0.4. Future strategies may include station APIs and audio recognition. Hosted deployments must add network-level private-address protections before accepting arbitrary public URLs.
 
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
