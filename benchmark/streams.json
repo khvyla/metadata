@@ -1,0 +1,4 @@
+{
+  "description": "Manual field-benchmark input. Add only explicitly approved stream URLs; do not include credentials or tokenized redirect URLs.",
+  "streams": []
+}
