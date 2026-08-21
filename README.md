@@ -46,6 +46,10 @@ const fallback = await resolveMetadata("https://example.com/live", {
 
 Native discovery is conservative and bounded: it uses only Icecast `/status-json.xsl` and Shoutcast `/stats?sid=1&json=1` on the stream origin, and redirects cannot leave that origin. Successful native results must safely match the stream mount when multiple Icecast sources exist. Audio recognition and metadata recovery are not part of v0.4. Future strategies may include station APIs and audio recognition. Hosted deployments must add network-level private-address protections before accepting arbitrary public URLs.
 
+### Manual field benchmark
+
+For an explicitly supplied, small stream list, add records to `benchmark/streams.json` and run `npm run benchmark`. The sequential manual harness writes ignored `benchmark/results.json` and `benchmark/report.md`; it is not a crawler or scanner.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.

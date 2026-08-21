@@ -81,6 +81,8 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+benchmark/results.json
+benchmark/report.md
 .output
 
 # Gatsby files
