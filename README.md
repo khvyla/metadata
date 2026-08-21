@@ -19,6 +19,18 @@ const metadata = processMetadata("StreamTitle='Miles Davis - So What';");
 // { track: { artist: "Miles Davis", title: "So What" }, source: { format: "icy", raw: ... } }
 ```
 
+### Live stream reading
+
+Parser-only usage accepts metadata you already have. To read one embedded ICY metadata block from an HTTP(S) stream, use the async reader:
+
+```ts
+import { readStreamMetadata } from "@khvyla/metadata";
+
+const metadata = await readStreamMetadata("https://example.com/live");
+```
+
+The reader follows a small number of redirects, uses bounded reads, and returns canonical metadata on success. If a station sends no embedded metadata, it returns `{ error: "metadata-unavailable", ... }`. v0.2 reads embedded ICY metadata only; it does not recover or enrich missing track data. The CLI also supports `npm run cli -- --stream "https://example.com/live"`.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.
