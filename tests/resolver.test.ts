@@ -56,6 +56,26 @@ describe("metadata resolver", () => {
     const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { response.writeHead(200, { "content-type": "application/json" }); return response.end('{"icestats":{"source":{"mount":"/stream","artist":"Bill Evans","title":"Waltz for Debby"}}}'); } response.writeHead(404); response.end(); });
     await expect(resolveMetadata(`${url}/stream`)).resolves.toMatchObject({ track: { artist: "Bill Evans", title: "Waltz for Debby" }, resolution: { method: "icecast-status", confidence: 0.98 }, attempts: [{ method: "embedded-icy", outcome: "metadata-unavailable" }, { method: "icecast-status", outcome: "resolved" }] });
   });
+  it("accepts a single Icecast source with a matching mount", async () => {
+    const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { response.writeHead(200, { "content-type": "application/json" }); return response.end('{"icestats":{"source":{"mount":"/stream","artist":"Bill Evans","title":"Waltz for Debby"}}}'); } response.writeHead(404); response.end(); });
+    await expect(resolveMetadata(`${url}/stream`)).resolves.toMatchObject({ resolution: { method: "icecast-status" }, track: { artist: "Bill Evans", title: "Waltz for Debby" } });
+  });
+  it("rejects a single Icecast source with a different mount", async () => {
+    const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { response.writeHead(200, { "content-type": "application/json" }); return response.end('{"icestats":{"source":{"mount":"/other","artist":"Wrong","title":"Track"}}}'); } response.writeHead(404); response.end(); });
+    await expect(resolveMetadata(`${url}/stream`)).resolves.toMatchObject({ unresolved: true, attempts: [{ method: "embedded-icy", outcome: "metadata-unavailable" }, { method: "icecast-status", outcome: "metadata-unavailable" }, { method: "shoutcast-status", outcome: "metadata-unavailable" }] });
+  });
+  it.each([
+    ["matching", "http://127.0.0.1:0/stream", true],
+    ["different", "http://127.0.0.1:0/other", false]
+  ])("handles a single source with a %s listenurl", async (_, listenurl, resolves) => {
+    const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { const source = { listenurl: listenurl.replace("http://127.0.0.1:0", url), artist: "Bill Evans", title: "Waltz for Debby" }; response.writeHead(200, { "content-type": "application/json" }); return response.end(JSON.stringify({ icestats: { source } })); } response.writeHead(404); response.end(); });
+    const result = await resolveMetadata(`${url}/stream`);
+    expect(result).toMatchObject(resolves ? { resolution: { method: "icecast-status" }, track: { artist: "Bill Evans", title: "Waltz for Debby" } } : { unresolved: true, attempts: [{ method: "embedded-icy", outcome: "metadata-unavailable" }, { method: "icecast-status", outcome: "metadata-unavailable" }, { method: "shoutcast-status", outcome: "metadata-unavailable" }] });
+  });
+  it("accepts a single Icecast source without mount identity conservatively", async () => {
+    const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { response.writeHead(200, { "content-type": "application/json" }); return response.end('{"icestats":{"source":{"artist":"Bill Evans","title":"Waltz for Debby"}}}'); } response.writeHead(404); response.end(); });
+    await expect(resolveMetadata(`${url}/stream`)).resolves.toMatchObject({ resolution: { method: "icecast-status" }, track: { artist: "Bill Evans", title: "Waltz for Debby" } });
+  });
   it("selects the matching mount from a multi-source Icecast response", async () => {
     const url = await listen((request, response) => { if (request.url === "/stream") return stream(response); if (request.url === "/status-json.xsl") { response.writeHead(200, { "content-type": "application/json" }); return response.end('{"icestats":{"source":[{"mount":"/other","artist":"Wrong","title":"Track"},{"mount":"/stream","artist":"Miles Davis","title":"So What"}]}}'); } response.writeHead(404); response.end(); });
     await expect(resolveMetadata(`${url}/stream`)).resolves.toMatchObject({ track: { artist: "Miles Davis", title: "So What" }, resolution: { method: "icecast-status" } });

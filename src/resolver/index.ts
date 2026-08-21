@@ -146,15 +146,21 @@ function requestNativeJson(url: string, origin: string, settings: Required<Nativ
 function selectIcecastSource(value: Record<string, unknown>, streamUrl: URL): Record<string, unknown> | undefined {
   const source = (value.icestats as Record<string, unknown> | undefined)?.source;
   const sources = (Array.isArray(source) ? source : source ? [source] : []).filter((item): item is Record<string, unknown> => Boolean(item) && typeof item === "object");
-  if (sources.length === 1) return sources[0];
+  if (sources.length === 1) return hasUsableMountIdentity(sources[0]) ? matchesMount(sources[0], streamUrl) ? sources[0] : undefined : sources[0];
   const matches = sources.filter((item) => matchesMount(item, streamUrl));
   return matches.length === 1 ? matches[0] : undefined;
 }
 
-function matchesMount(source: Record<string, unknown>, streamUrl: URL) {
-  if (source.mount === streamUrl.pathname) return true;
+function hasUsableMountIdentity(source: Record<string, unknown>) {
+  if (source.mount !== undefined && source.mount !== null) return true;
   if (typeof source.listenurl !== "string") return false;
-  try { const listenUrl = new URL(source.listenurl); return listenUrl.origin === streamUrl.origin && listenUrl.pathname === streamUrl.pathname; } catch { return false; }
+  try { new URL(source.listenurl); return true; } catch { return false; }
+}
+
+function matchesMount(source: Record<string, unknown>, streamUrl: URL) {
+  if (source.mount !== undefined && source.mount !== null && source.mount !== streamUrl.pathname) return false;
+  if (typeof source.listenurl !== "string") return source.mount === streamUrl.pathname;
+  try { const listenUrl = new URL(source.listenurl); return listenUrl.origin === streamUrl.origin && listenUrl.pathname === streamUrl.pathname && (source.mount === undefined || source.mount === null || source.mount === streamUrl.pathname); } catch { return source.mount === streamUrl.pathname; }
 }
 
 function selectShoutcastMetadata(value: Record<string, unknown>): Record<string, unknown> | undefined {
