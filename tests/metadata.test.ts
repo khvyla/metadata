@@ -1,8 +1,19 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { convertMetadata, processMetadata, registerParser } from "../src";
+
+const realWorldIcyFixtures = JSON.parse(readFileSync(resolve("tests/fixtures/real-world-icy.json"), "utf8")) as Array<{ name: string; raw: string; artist: string; title: string }>;
 
 describe("metadata engine", () => {
   it("parses ICY and preserves raw metadata", () => { const result = processMetadata("StreamTitle=' Miles Davis - So What.mp3 '; ") as any; expect(result).toMatchObject({ track: { artist: "Miles Davis", title: "So What" }, source: { format: "icy", raw: "StreamTitle=' Miles Davis - So What.mp3 '; " } }); });
+  it.each(realWorldIcyFixtures)("parses live fixture: $name", ({ raw, artist, title }) => {
+    expect(processMetadata(raw)).toMatchObject({ track: { artist, title }, source: { format: "icy", raw } });
+  });
+  it("parses an ICY block with trailing NUL padding and preserves it raw", () => {
+    const raw = "StreamTitle='Roy Ayers Ubiquity - Everybody Loves The Sunshine';\0\0\0\0";
+    expect(processMetadata(raw)).toMatchObject({ track: { artist: "Roy Ayers Ubiquity", title: "Everybody Loves The Sunshine" }, source: { format: "icy", raw } });
+  });
   it.each(["Artist – Title", "Artist — Title"])("accepts unicode separators", (input) => expect(processMetadata(input)).toMatchObject({ track: { artist: "Artist", title: "Title" } }));
   it("leaves unknown plain text as a title", () => expect(processMetadata("Station ident")).toMatchObject({ track: { title: "Station ident" }, source: { format: "plain-text" } }));
   it("maps generic JSON", () => expect(processMetadata('{"artist":"Nina Simone","title":"Sinnerman"}')).toMatchObject({ track: { artist: "Nina Simone", title: "Sinnerman" }, source: { format: "json" } }));
