@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { convertMetadata, processMetadata } from "../src";
+import { convertMetadata, processMetadata, registerParser } from "../src";
 
 describe("metadata engine", () => {
   it("parses ICY and preserves raw metadata", () => { const result = processMetadata("StreamTitle=' Miles Davis - So What.mp3 '; ") as any; expect(result).toMatchObject({ track: { artist: "Miles Davis", title: "So What" }, source: { format: "icy", raw: "StreamTitle=' Miles Davis - So What.mp3 '; " } }); });
@@ -10,5 +10,9 @@ describe("metadata engine", () => {
   it("maps Icecast payloads", () => expect(processMetadata({ server_name: "Radio", artist: "Kate Bush", title: "Running Up That Hill" })).toMatchObject({ track: { artist: "Kate Bush", title: "Running Up That Hill" }, station: { name: "Radio" }, source: { format: "icecast" } }));
   it("maps Shoutcast payloads", () => expect(processMetadata({ servername: "Radio", songtitle: "Björk - Joga" })).toMatchObject({ track: { artist: "Björk", title: "Joga" }, station: { name: "Radio" }, source: { format: "shoutcast" } }));
   it("converts to canonical JSON and ICY", () => { const metadata = processMetadata("Miles Davis - So What") as any; expect(JSON.parse(convertMetadata(metadata, "json")).track.title).toBe("So What"); expect(convertMetadata(metadata, "icy")).toBe("StreamTitle='Miles Davis - So What';"); });
+  it("uses a registered custom adapter end-to-end", () => {
+    registerParser({ format: "vendor", detect: (input) => typeof input === "string" && input.startsWith("VENDOR:"), parse: (input) => ({ track: { title: String(input).slice(7) }, source: { format: "vendor", raw: input } }) });
+    expect(processMetadata("VENDOR: custom track")).toMatchObject({ track: { title: "custom track" }, source: { format: "vendor" } });
+  });
   it("fails gracefully for malformed JSON", () => expect(processMetadata("{broken")).toMatchObject({ track: { title: "{broken" }, source: { format: "plain-text" } }));
 });

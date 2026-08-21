@@ -2,7 +2,7 @@
   "name": "@khvyla/metadata",
   "version": "0.1.0",
   "description": "A small universal audio metadata parser and converter.",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
