@@ -31,6 +31,10 @@ The core selects a format adapter, then normalizes its canonical result. Adding 
 
 v0.1 does not poll streams, call external services, enrich artwork, persist data, or expose a server. XML parsing intentionally handles only simple flat metadata tags.
 
+## Live-stream transport notes
+
+Live validation found transport concerns outside this parser-only v0.1.1 scope: HTTP redirects can lead to tokenized stream URLs; some HTTP clients decode Cyrillic or other non-ASCII ICY headers incorrectly; a URL can return HTML/404 instead of audio; a host can refuse its TCP connection; and ICY blocks can include trailing NUL padding. These conditions belong to a future stream client or transport layer, not the metadata parsers.
+
 ## Roadmap
 
 Add richer format adapters, stronger XML support, streaming integration, and optional enrichment only after the core format contract has proved stable.

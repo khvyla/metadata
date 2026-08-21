@@ -1,0 +1,26 @@
+[
+  {
+    "name": "radio-jazz-light",
+    "raw": "StreamTitle='Roy Ayers Ubiquity - Everybody Loves The Sunshine';",
+    "artist": "Roy Ayers Ubiquity",
+    "title": "Everybody Loves The Sunshine"
+  },
+  {
+    "name": "zeno-jazz-gold",
+    "raw": "StreamTitle='Stan Getz - Misty';",
+    "artist": "Stan Getz",
+    "title": "Misty"
+  },
+  {
+    "name": "radio-yeden",
+    "raw": "StreamTitle='Thundercat, Lil Yachty, Flying Lotus - I Did This To Myself';",
+    "artist": "Thundercat, Lil Yachty, Flying Lotus",
+    "title": "I Did This To Myself"
+  },
+  {
+    "name": "radio-respect",
+    "raw": "StreamTitle='Anden - Youth Is Wasted On The Young';",
+    "artist": "Anden",
+    "title": "Youth Is Wasted On The Young"
+  }
+]
