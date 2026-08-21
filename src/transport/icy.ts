@@ -14,6 +14,7 @@ const defaults = { timeoutMs: 10_000, maxRedirects: 3, maxBytes: 128 * 1024 };
 const error = (category: StreamMetadataErrorCategory, message: string, status?: number): StreamMetadataError => ({ error: category, message, ...(status && { status }) });
 const isAudio = (contentType: string | undefined) => !contentType || /^audio\//i.test(contentType) || /^(application\/ogg|application\/octet-stream)/i.test(contentType);
 const usableTitle = (block: string) => block.match(/StreamTitle\s*=\s*'([^']*)'/i)?.[1].trim();
+const isSupportedProtocol = (protocol: string) => protocol === "http:" || protocol === "https:";
 const captureHeaders = (headers: http.IncomingHttpHeaders): StreamTransportHeaders => {
   const names = ["server", "content-type", "icy-name", "icy-description", "icy-genre", "icy-url", "icy-br", "icy-metaint"] as const;
   return Object.fromEntries(names.filter((name) => headers[name] !== undefined).map((name) => [name, headers[name]!])) as StreamTransportHeaders;
@@ -25,8 +26,10 @@ export function isStreamMetadataError(result: StreamMetadataResult): result is S
 
 export async function readStreamMetadata(url: string, options: StreamMetadataOptions = {}): Promise<StreamMetadataResult> {
   const settings = { ...defaults, ...options };
-  try { new URL(url); } catch { return error("invalid-stream", "The stream URL is invalid."); }
-  return read(url, settings, 0);
+  let streamUrl: URL;
+  try { streamUrl = new URL(url); } catch { return error("invalid-stream", "The stream URL is invalid."); }
+  if (!isSupportedProtocol(streamUrl.protocol)) return error("invalid-stream", "Only HTTP(S) stream URLs are supported.");
+  return read(streamUrl.href, settings, 0);
 }
 
 function read(url: string, settings: Required<StreamMetadataOptions>, redirects: number): Promise<StreamMetadataResult> {
@@ -40,7 +43,10 @@ function read(url: string, settings: Required<StreamMetadataOptions>, redirects:
       if (status >= 300 && status < 400) {
         response.destroy();
         if (!location || redirects >= settings.maxRedirects) return finish(error("invalid-stream", "Redirect limit reached.", status));
-        return read(new URL(location, url).href, settings, redirects + 1).then(finish);
+        let target: URL;
+        try { target = new URL(location, url); } catch { return finish(error("invalid-stream", "Redirect target is invalid.", status)); }
+        if (!isSupportedProtocol(target.protocol)) return finish(error("invalid-stream", "Redirect target must use HTTP(S).", status));
+        return read(target.href, settings, redirects + 1).then(finish);
       }
       if (status < 200 || status >= 300) { response.destroy(); return finish(error("http-error", `Stream returned HTTP ${status}.`, status)); }
       const contentType = response.headers["content-type"];

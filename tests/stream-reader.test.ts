@@ -16,6 +16,9 @@ afterEach(async () => { server?.closeAllConnections(); await new Promise<void>((
 const stream = (response: import("node:http").ServerResponse, chunks: Buffer[]) => { response.writeHead(200, { "content-type": "audio/mpeg", "icy-metaint": "4" }); response.end(Buffer.concat(chunks)); };
 
 describe("live ICY stream reader", () => {
+  it("rejects an unsupported initial URL protocol", async () => {
+    const result = await readStreamMetadata("ftp://example.com/live"); expect(isStreamMetadataError(result) && result.error).toBe("invalid-stream");
+  });
   it("requests and parses a direct ICY stream through the existing engine", async () => {
     const url = await listen((request, response) => { expect(request.headers["icy-metadata"]).toBe("1"); expect(request.headers["user-agent"]).toBe("khvyla-metadata/0.2"); stream(response, [icyBlock("StreamTitle='Stan Getz - Misty';")]); });
     await expect(readStreamMetadata(url)).resolves.toMatchObject({ track: { artist: "Stan Getz", title: "Misty" }, source: { format: "icy", raw: "StreamTitle='Stan Getz - Misty';" }, transport: { headers: { "icy-metaint": "4", "content-type": "audio/mpeg" } } });
@@ -52,5 +55,9 @@ describe("live ICY stream reader", () => {
   it("stops at the configured redirect limit", async () => {
     const url = await listen((_, response) => { response.writeHead(302, { location: "/again" }); response.end(); });
     const result = await readStreamMetadata(url, { maxRedirects: 0 }); expect(isStreamMetadataError(result) && result.error).toBe("invalid-stream");
+  });
+  it("rejects redirects to unsupported protocols", async () => {
+    const url = await listen((_, response) => { response.writeHead(302, { location: "ftp://example.com/live" }); response.end(); });
+    const result = await readStreamMetadata(url); expect(isStreamMetadataError(result) && result.error).toBe("invalid-stream");
   });
 });
