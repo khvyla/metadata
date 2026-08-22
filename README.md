@@ -59,6 +59,21 @@ assessAirplayEligibility({ track: { artist: "Stan Getz", title: "Misty" } });
 
 It deterministically flags missing fields, obvious placeholders, encoding corruption, station identifiers, and service messages. Future audio recognition may recover or verify rejected observations; it is not implemented here.
 
+### Local audio recognition foundation
+
+v0.6 can generate a local Chromaprint fingerprint from an audio file path when the optional `fpcalc` system binary is installed. It uses no paid recognition API and does not identify recordings yet; a future khvyla. Recognition Index can match these fingerprints.
+
+```ts
+import { createAudioFingerprint, getFingerprintCapability } from "@khvyla/metadata";
+
+const capability = await getFingerprintCapability();
+const fingerprint = capability.available
+  ? await createAudioFingerprint("./sample.mp3")
+  : capability;
+```
+
+Fingerprint generation is independent from parsing, stream reading, resolution, and airplay-quality assessment. It never automatically associates a fingerprint with station metadata.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.
