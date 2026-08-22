@@ -81,6 +81,9 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+experiments/chromaprint/samples/*.wav
+experiments/chromaprint/samples/*.mp3
+experiments/chromaprint/samples/*.opus
 .output
 
 # Gatsby files

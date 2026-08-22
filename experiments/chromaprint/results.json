@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-08-22T21:55:29.368Z",
+  "method": "Experimental sliding raw-frame Hamming-bit similarity; not a stable matching API.",
+  "comparisons": [
+    {
+      "sampleA": "a-0-30.wav",
+      "sampleB": "a-0-30-64.mp3",
+      "knownRelationship": "same-recording",
+      "scenario": "encoding-64k",
+      "durationSeconds": [
+        30,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.9834558823529411,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 221,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-30.wav",
+      "sampleB": "a-0-30-128.mp3",
+      "knownRelationship": "same-recording",
+      "scenario": "encoding-128k",
+      "durationSeconds": [
+        30,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.9893947963800905,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 221,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-30.wav",
+      "sampleB": "a-0-30-320.mp3",
+      "knownRelationship": "same-recording",
+      "scenario": "encoding-320k",
+      "durationSeconds": [
+        30,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.9995757918552036,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 221,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-30.wav",
+      "sampleB": "a-0-30-96.opus",
+      "knownRelationship": "same-recording",
+      "scenario": "encoding-opus-96k",
+      "durationSeconds": [
+        30,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.9790723981900452,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 221,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-10.wav",
+      "sampleB": "a-0-20.wav",
+      "knownRelationship": "same-recording",
+      "scenario": "duration-10-vs-20",
+      "durationSeconds": [
+        10,
+        20
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 1,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 59,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-20.wav",
+      "sampleB": "a-0-30.wav",
+      "knownRelationship": "same-recording",
+      "scenario": "duration-20-vs-30",
+      "durationSeconds": [
+        20,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 1,
+      "bestOffsetFrames": 0,
+      "comparedFrames": 140,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-20.wav",
+      "sampleB": "a-10-20.wav",
+      "knownRelationship": "same-recording",
+      "scenario": "overlapping-offset",
+      "durationSeconds": [
+        20,
+        20
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.9782838983050848,
+      "bestOffsetFrames": -81,
+      "comparedFrames": 59,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-20.wav",
+      "sampleB": "a-30-20.wav",
+      "knownRelationship": "same-recording",
+      "scenario": "non-overlapping-offset",
+      "durationSeconds": [
+        20,
+        20
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.7828125,
+      "bestOffsetFrames": -120,
+      "comparedFrames": 20,
+      "expectedMatch": true,
+      "observedMatchAt075": true
+    },
+    {
+      "sampleA": "a-0-30.wav",
+      "sampleB": "b-0-30.wav",
+      "knownRelationship": "different-recording",
+      "scenario": "different-source",
+      "durationSeconds": [
+        30,
+        30
+      ],
+      "exactFingerprintEquality": false,
+      "experimentalSimilarity": 0.7650316455696202,
+      "bestOffsetFrames": -63,
+      "comparedFrames": 158,
+      "expectedMatch": false,
+      "observedMatchAt075": true
+    }
+  ]
+}
