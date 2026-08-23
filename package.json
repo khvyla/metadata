@@ -11,7 +11,8 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
-    "cli": "npm run build --silent && node dist/cli.js"
+    "cli": "npm run build --silent && node dist/cli.js",
+    "experiment:independent-corpus": "node experiments/chromaprint/run-independent-corpus.js"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

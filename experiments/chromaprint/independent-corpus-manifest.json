@@ -1,0 +1,63 @@
+{
+  "experiment": "Independent real-music recognition validation",
+  "licensePolicy": "All source recordings are CC0 1.0. Local downloaded audio is ignored and is not committed.",
+  "sources": [
+    {
+      "id": "oga-songs",
+      "name": "OpenGameArt — Songs",
+      "source": "https://opengameart.org/content/songs-0",
+      "creator": "awdawdawdwda",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Not required under CC0."
+    },
+    {
+      "id": "oga-platformer",
+      "name": "OpenGameArt — Platformer Chiptunes",
+      "source": "https://opengameart.org/content/platformer-chiptunes",
+      "creator": "Guy G. Gamerson",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Not required under CC0."
+    },
+    {
+      "id": "oga-fantasy",
+      "name": "OpenGameArt — Fantasy Song Pack Volume 1",
+      "source": "https://opengameart.org/content/fantasy-song-pack-volume-1",
+      "creator": "troubadour",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Not required under CC0."
+    }
+  ],
+  "recordings": [
+    { "id": "ic01", "title": "wealthy3", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/wealthy3.mp3", "indexed": true },
+    { "id": "ic02", "title": "woke2", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/woke2.mp3", "indexed": true },
+    { "id": "ic03", "title": "billion", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/billion.mp3", "indexed": true },
+    { "id": "ic04", "title": "farm", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/farm.mp3", "indexed": true },
+    { "id": "ic05", "title": "trailer", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/trailer.mp3", "indexed": true },
+    { "id": "ic06", "title": "rush", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/rush.mp3", "indexed": true },
+    { "id": "ic07", "title": "sakuriasis", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/sakuriasis.mp3", "indexed": true },
+    { "id": "ic08", "title": "vox", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/vox.mp3", "indexed": true },
+    { "id": "ic09", "title": "beatnik", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/beatnik.mp3", "indexed": true },
+    { "id": "ic10", "title": "moments", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/moments.mp3", "indexed": true },
+    { "id": "ic11", "title": "too", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/too.mp3", "indexed": true },
+    { "id": "ic12", "title": "fakie_dakie", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/fakie_dakie.mp3", "indexed": true },
+    { "id": "ic13", "title": "hard", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/hard_0.mp3", "indexed": true },
+    { "id": "ic14", "title": "rush_2", "sourceId": "oga-songs", "assetUrl": "https://opengameart.org/sites/default/files/rush_2.mp3", "indexed": true },
+    { "id": "ic15", "title": "stage1", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/stage1_4.mp3", "indexed": true },
+    { "id": "ic16", "title": "stage2", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/stage2_2.mp3", "indexed": true },
+    { "id": "ic17", "title": "stage3", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/stage3_2.mp3", "indexed": true },
+    { "id": "ic18", "title": "stage4", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/stage4_2.mp3", "indexed": true },
+    { "id": "ic19", "title": "stage5", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/stage5_2.mp3", "indexed": true },
+    { "id": "ic20", "title": "boss", "sourceId": "oga-platformer", "assetUrl": "https://opengameart.org/sites/default/files/boss_3.mp3", "indexed": true },
+    { "id": "iu01", "title": "back_to_nature", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/back_to_nature.mp3", "indexed": false },
+    { "id": "iu02", "title": "bells_of_winter", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/bells_of_winter.mp3", "indexed": false },
+    { "id": "iu03", "title": "fairy_lights", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/fairy_lights.mp3", "indexed": false },
+    { "id": "iu04", "title": "homestead", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/homestead.mp3", "indexed": false },
+    { "id": "iu05", "title": "jaunt", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/jaunt.mp3", "indexed": false },
+    { "id": "iu06", "title": "snow_day", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/snow_day.mp3", "indexed": false },
+    { "id": "iu07", "title": "springly_sprigs", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/springly_sprigs.mp3", "indexed": false },
+    { "id": "iu08", "title": "wandering_woodlands", "sourceId": "oga-fantasy", "assetUrl": "https://opengameart.org/sites/default/files/wandering_woodlands.mp3", "indexed": false }
+  ]
+}
