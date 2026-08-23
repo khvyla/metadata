@@ -1,0 +1,4141 @@
+{
+  "generatedAt": "2026-08-23T22:36:12.171Z",
+  "corpus": {
+    "indexed": 20,
+    "unknownOnly": 8,
+    "source": {
+      "name": "Ondrosik Free Music Library",
+      "url": "https://ondrosik.sk/music/",
+      "license": "CC0 1.0 Universal",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "appliesTo": "every recording in this manifest",
+      "notes": "The source library states that all listed tracks are under CC0. Audio is downloaded only into the ignored local experiment directory."
+    }
+  },
+  "retrieval": {
+    "kind": "medium-frame",
+    "offsetBucketFrames": 2,
+    "candidateLimit": 20,
+    "indexTokens": 3521,
+    "indexPostings": 5600
+  },
+  "split": {
+    "calibration": {
+      "indexed": [
+        "rm01",
+        "rm03",
+        "rm05",
+        "rm07",
+        "rm09",
+        "rm11",
+        "rm13",
+        "rm15",
+        "rm17",
+        "rm19"
+      ],
+      "unknown": [
+        "ru01",
+        "ru03",
+        "ru05",
+        "ru07"
+      ]
+    },
+    "holdout": {
+      "indexed": [
+        "rm02",
+        "rm04",
+        "rm06",
+        "rm08",
+        "rm10",
+        "rm12",
+        "rm14",
+        "rm16",
+        "rm18",
+        "rm20"
+      ],
+      "unknown": [
+        "ru02",
+        "ru04",
+        "ru06",
+        "ru08"
+      ]
+    }
+  },
+  "ruleCandidates": [
+    {
+      "rule": {
+        "id": "strict-a",
+        "minimumAverage": 0.97,
+        "minimumStrongProportion": 0.85,
+        "minimumRun": 70,
+        "minimumFrames": 60,
+        "minimumDominantVotes": 4,
+        "minimumMargin": 0.02
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 3,
+          "wrong": 0,
+          "rejected": 52
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.05454545454545454,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.9491525423728814
+      }
+    },
+    {
+      "rule": {
+        "id": "strict-b",
+        "minimumAverage": 0.965,
+        "minimumStrongProportion": 0.8,
+        "minimumRun": 60,
+        "minimumFrames": 60,
+        "minimumDominantVotes": 4,
+        "minimumMargin": 0.02
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 8,
+          "wrong": 0,
+          "rejected": 47
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.14545454545454545,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.864406779661017
+      }
+    },
+    {
+      "rule": {
+        "id": "strict-c",
+        "minimumAverage": 0.96,
+        "minimumStrongProportion": 0.8,
+        "minimumRun": 50,
+        "minimumFrames": 60,
+        "minimumDominantVotes": 4,
+        "minimumMargin": 0.025
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 11,
+          "wrong": 0,
+          "rejected": 44
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.2,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.8135593220338984
+      }
+    },
+    {
+      "rule": {
+        "id": "balanced-a",
+        "minimumAverage": 0.955,
+        "minimumStrongProportion": 0.75,
+        "minimumRun": 45,
+        "minimumFrames": 50,
+        "minimumDominantVotes": 3,
+        "minimumMargin": 0.02
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 21,
+          "wrong": 0,
+          "rejected": 34
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.38181818181818183,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.6440677966101694
+      }
+    },
+    {
+      "rule": {
+        "id": "balanced-b",
+        "minimumAverage": 0.95,
+        "minimumStrongProportion": 0.7,
+        "minimumRun": 40,
+        "minimumFrames": 50,
+        "minimumDominantVotes": 3,
+        "minimumMargin": 0.025
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 25,
+          "wrong": 0,
+          "rejected": 30
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.45454545454545453,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.576271186440678
+      }
+    },
+    {
+      "rule": {
+        "id": "margin-first",
+        "minimumAverage": 0.94,
+        "minimumStrongProportion": 0.65,
+        "minimumRun": 35,
+        "minimumFrames": 40,
+        "minimumDominantVotes": 3,
+        "minimumMargin": 0.04
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 28,
+          "wrong": 0,
+          "rejected": 27
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.509090909090909,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.5254237288135594
+      }
+    },
+    {
+      "rule": {
+        "id": "recall-a",
+        "minimumAverage": 0.94,
+        "minimumStrongProportion": 0.65,
+        "minimumRun": 32,
+        "minimumFrames": 40,
+        "minimumDominantVotes": 3,
+        "minimumMargin": 0.02
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 29,
+          "wrong": 0,
+          "rejected": 26
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.5272727272727272,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.5084745762711864
+      }
+    },
+    {
+      "rule": {
+        "id": "recall-b",
+        "minimumAverage": 0.92,
+        "minimumStrongProportion": 0.6,
+        "minimumRun": 24,
+        "minimumFrames": 40,
+        "minimumDominantVotes": 2,
+        "minimumMargin": 0.03
+      },
+      "metrics": {
+        "known": {
+          "total": 55,
+          "correct": 36,
+          "wrong": 0,
+          "rejected": 19
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.6545454545454545,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3898305084745763
+      }
+    }
+  ],
+  "best": {
+    "rule": {
+      "id": "recall-b",
+      "minimumAverage": 0.92,
+      "minimumStrongProportion": 0.6,
+      "minimumRun": 24,
+      "minimumFrames": 40,
+      "minimumDominantVotes": 2,
+      "minimumMargin": 0.03
+    },
+    "calibration": {
+      "known": {
+        "total": 55,
+        "correct": 36,
+        "wrong": 0,
+        "rejected": 19
+      },
+      "unknown": {
+        "total": 4,
+        "rejected": 4,
+        "falselyAccepted": 0
+      },
+      "precision": 1,
+      "recall": 0.6545454545454545,
+      "falsePositiveRate": 0,
+      "rejectionRate": 0.3898305084745763
+    },
+    "holdout": {
+      "known": {
+        "total": 54,
+        "correct": 39,
+        "wrong": 0,
+        "rejected": 15
+      },
+      "unknown": {
+        "total": 4,
+        "rejected": 4,
+        "falselyAccepted": 0
+      },
+      "precision": 1,
+      "recall": 0.7222222222222222,
+      "falsePositiveRate": 0,
+      "rejectionRate": 0.3275862068965517
+    },
+    "topK": {
+      "5": {
+        "known": {
+          "total": 54,
+          "correct": 39,
+          "wrong": 0,
+          "rejected": 15
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7222222222222222,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3275862068965517
+      },
+      "10": {
+        "known": {
+          "total": 54,
+          "correct": 39,
+          "wrong": 0,
+          "rejected": 15
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7222222222222222,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3275862068965517
+      },
+      "20": {
+        "known": {
+          "total": 54,
+          "correct": 39,
+          "wrong": 0,
+          "rejected": 15
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7222222222222222,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3275862068965517
+      }
+    },
+    "holdoutByTransformation": {
+      "MP3 64 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 7,
+          "wrong": 0,
+          "rejected": 3
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3
+      },
+      "MP3 128 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 7,
+          "wrong": 0,
+          "rejected": 3
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3
+      },
+      "MP3 320 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 8,
+          "wrong": 0,
+          "rejected": 2
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.8,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.2
+      },
+      "Opus 96 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 7,
+          "wrong": 0,
+          "rejected": 3
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3
+      },
+      "10-second MP3 128 kbps": {
+        "known": {
+          "total": 5,
+          "correct": 2,
+          "wrong": 0,
+          "rejected": 3
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.4,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.6
+      },
+      "30-second MP3 128 kbps": {
+        "known": {
+          "total": 5,
+          "correct": 5,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "double-transcode": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "mild-eq": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "low-level tone overlay": {
+        "known": {
+          "total": 2,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 1
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.5,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.5
+      },
+      "unknown MP3 128 kbps": {
+        "known": {
+          "total": 0,
+          "correct": 0,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 4,
+          "rejected": 4,
+          "falselyAccepted": 0
+        },
+        "precision": 0,
+        "recall": 0,
+        "falsePositiveRate": 0,
+        "rejectionRate": 1
+      }
+    },
+    "allByTransformation": {
+      "MP3 64 kbps": {
+        "known": {
+          "total": 20,
+          "correct": 16,
+          "wrong": 0,
+          "rejected": 4
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.8,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.2
+      },
+      "MP3 128 kbps": {
+        "known": {
+          "total": 20,
+          "correct": 12,
+          "wrong": 0,
+          "rejected": 8
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.6,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.4
+      },
+      "MP3 320 kbps": {
+        "known": {
+          "total": 20,
+          "correct": 14,
+          "wrong": 0,
+          "rejected": 6
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.7,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3
+      },
+      "Opus 96 kbps": {
+        "known": {
+          "total": 20,
+          "correct": 13,
+          "wrong": 0,
+          "rejected": 7
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.65,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.35
+      },
+      "10-second MP3 128 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 4,
+          "wrong": 0,
+          "rejected": 6
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.4,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.6
+      },
+      "30-second MP3 128 kbps": {
+        "known": {
+          "total": 10,
+          "correct": 10,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "loudnorm": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "double-transcode": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "gain": {
+        "known": {
+          "total": 1,
+          "correct": 0,
+          "wrong": 0,
+          "rejected": 1
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 0,
+        "recall": 0,
+        "falsePositiveRate": 0,
+        "rejectionRate": 1
+      },
+      "mild-eq": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "mono": {
+        "known": {
+          "total": 1,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      },
+      "low-level tone overlay": {
+        "known": {
+          "total": 2,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 1
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.5,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.5
+      },
+      "low-level noise overlay": {
+        "known": {
+          "total": 2,
+          "correct": 1,
+          "wrong": 0,
+          "rejected": 1
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.5,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.5
+      },
+      "unknown MP3 128 kbps": {
+        "known": {
+          "total": 0,
+          "correct": 0,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 8,
+          "rejected": 8,
+          "falselyAccepted": 0
+        },
+        "precision": 0,
+        "recall": 0,
+        "falsePositiveRate": 0,
+        "rejectionRate": 1
+      }
+    },
+    "byDuration": {
+      "10": {
+        "known": {
+          "total": 10,
+          "correct": 4,
+          "wrong": 0,
+          "rejected": 6
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.4,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.6
+      },
+      "20": {
+        "known": {
+          "total": 89,
+          "correct": 61,
+          "wrong": 0,
+          "rejected": 28
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 0.6853932584269663,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0.3146067415730337
+      },
+      "30": {
+        "known": {
+          "total": 10,
+          "correct": 10,
+          "wrong": 0,
+          "rejected": 0
+        },
+        "unknown": {
+          "total": 0,
+          "rejected": 0,
+          "falselyAccepted": 0
+        },
+        "precision": 1,
+        "recall": 1,
+        "falsePositiveRate": 0,
+        "rejectionRate": 0
+      }
+    },
+    "holdoutRows": [
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.35961096938775505,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 233,
+              "dominantVotes": 119,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 95,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.5107296137339056,
+              "score": 452.85625
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9415625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.9,
+              "longestStrongRun": 24,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -35,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5819515306122449,
+              "comparedFrames": 98,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -42
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.3620918367346938,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 230,
+              "dominantVotes": 114,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 93,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.4956521739130435,
+              "score": 435.86875
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.945,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 32,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -35,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5829081632653061,
+              "comparedFrames": 98,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -42
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.3614795918367347,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 244,
+              "dominantVotes": 125,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 100,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5122950819672131,
+              "score": 475.86875
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.94375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 32,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -35,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5822704081632653,
+              "comparedFrames": 98,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -42
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.3599107142857143,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 246,
+              "dominantVotes": 123,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 97,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.5,
+              "score": 466.85625
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9425,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 32,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -35,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5825892857142857,
+              "comparedFrames": 98,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -42
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 7,
+        "shortlistSize": 7,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.39038690476190485,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 259,
+              "dominantVotes": 128,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 97,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.4942084942084942,
+              "score": 481.8625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.966875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.98,
+              "longestStrongRun": 94,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 12,
+              "dominantVotes": 3,
+              "dominantBucket": 27,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 3,
+              "offsetConsistency": 0.25,
+              "score": 11.01875
+            },
+            "segmentId": "rm02:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5764880952380952,
+              "comparedFrames": 105,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -35
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 8,
+        "shortlistSize": 8,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.39147629310344834,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 274,
+              "dominantVotes": 138,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 100,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.5036496350364964,
+              "score": 514.8625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9690625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.98,
+              "longestStrongRun": 94,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 2,
+              "dominantVotes": 1,
+              "dominantBucket": 63,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.5,
+              "score": 4
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5775862068965517,
+              "comparedFrames": 116,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 24
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 8,
+        "shortlistSize": 8,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.3911206896551723,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 271,
+              "dominantVotes": 134,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 99,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.4944649446494465,
+              "score": 501.8625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9684375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.99,
+              "longestStrongRun": 98,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 2,
+              "dominantVotes": 1,
+              "dominantBucket": 63,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.5,
+              "score": 4
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5773168103448276,
+              "comparedFrames": 116,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 24
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 7,
+        "shortlistSize": 7,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.3900233644859814,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 268,
+              "dominantVotes": 128,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 96,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.47761194029850745,
+              "score": 480.8625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.96625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.99,
+              "longestStrongRun": 74,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 2,
+              "dominantVotes": 1,
+              "dominantBucket": 63,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.5,
+              "score": 4
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5762266355140186,
+              "comparedFrames": 107,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 33
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.38932291666666663,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 139,
+              "dominantVotes": 90,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 74,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.6474820143884892,
+              "score": 344.85625
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.84,
+              "longestStrongRun": 13,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 75,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm09:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5481770833333334,
+              "comparedFrames": 96,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -44
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.38903645833333333,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 133,
+              "dominantVotes": 89,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 72,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.6691729323308271,
+              "score": 339.85625
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9365625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.85,
+              "longestStrongRun": 15,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 75,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm09:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5475260416666666,
+              "comparedFrames": 96,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -44
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3888020833333333,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 138,
+              "dominantVotes": 91,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 74,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.6594202898550725,
+              "score": 347.85625
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.83,
+              "longestStrongRun": 15,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 75,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm09:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5486979166666667,
+              "comparedFrames": 120,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 20
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.39364485981308417,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 141,
+              "dominantVotes": 95,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 77,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.6737588652482269,
+              "score": 362.85625
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.94125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.86,
+              "longestStrongRun": 16,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 75,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm09:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5476051401869159,
+              "comparedFrames": 107,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 33
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.3392223837209303,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 194,
+              "dominantVotes": 121,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 88,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.6237113402061856,
+              "score": 451.86875
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9496875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.94,
+              "longestStrongRun": 34,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6104651162790697,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -54
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.3392732558139535,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 194,
+              "dominantVotes": 119,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 86,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.6134020618556701,
+              "score": 443.86875
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.949375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.95,
+              "longestStrongRun": 34,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6101017441860465,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -54
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.33994912790697673,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 205,
+              "dominantVotes": 125,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 90,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.6097560975609756,
+              "score": 465.86875
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9496875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.95,
+              "longestStrongRun": 34,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6097383720930233,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -54
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.3389607558139536,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 203,
+              "dominantVotes": 121,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 88,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5960591133004927,
+              "score": 451.86875
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9490625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.94,
+              "longestStrongRun": 34,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6101017441860465,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -54
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.3610416666666666,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 1068,
+              "dominantVotes": 178,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 112,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.16666666666666666,
+              "score": 646.8625
+            },
+            "segmentId": "rm10:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9678125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.97,
+              "longestStrongRun": 65,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 106,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6067708333333334,
+              "comparedFrames": 84,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 56
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.3791782407407407,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 1035,
+              "dominantVotes": 170,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 107,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.1642512077294686,
+              "score": 617.8625
+            },
+            "segmentId": "rm10:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9665625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.97,
+              "longestStrongRun": 65,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 23,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm12:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5873842592592593,
+              "comparedFrames": 108,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -32
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.3816087962962963,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 1031,
+              "dominantVotes": 172,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 108,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.16682832201745879,
+              "score": 624.8625
+            },
+            "segmentId": "rm10:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.968125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.97,
+              "longestStrongRun": 65,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 23,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm12:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5865162037037037,
+              "comparedFrames": 108,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -32
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.38091435185185185,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 1013,
+              "dominantVotes": 168,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 105,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.16584402764067127,
+              "score": 609.8625
+            },
+            "segmentId": "rm10:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9665625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.98,
+              "longestStrongRun": 65,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 23,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm12:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5856481481481481,
+              "comparedFrames": 108,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -32
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm12",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 9,
+        "shortlistSize": 9,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3539163669064749,
+          "best": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 220,
+              "dominantVotes": 102,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 74,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.4636363636363636,
+              "score": 380.85625
+            },
+            "segmentId": "rm12:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.936875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.87,
+              "longestStrongRun": 20,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 36,
+              "dominantVotes": 7,
+              "dominantBucket": 0,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.19444444444444445,
+              "score": 24.0125
+            },
+            "segmentId": "rm19:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5829586330935251,
+              "comparedFrames": 139,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -1
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm12",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 9,
+        "shortlistSize": 9,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.35636690647482006,
+          "best": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 221,
+              "dominantVotes": 104,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 75,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.47058823529411764,
+              "score": 387.85625
+            },
+            "segmentId": "rm12:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.94,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.88,
+              "longestStrongRun": 18,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 36,
+              "dominantVotes": 7,
+              "dominantBucket": 0,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.19444444444444445,
+              "score": 24.0125
+            },
+            "segmentId": "rm19:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5836330935251799,
+              "comparedFrames": 139,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -1
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm12",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 9,
+        "shortlistSize": 9,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm12",
+          "margin": 0.35684352517985607,
+          "best": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 219,
+              "dominantVotes": 103,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 74,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.4703196347031963,
+              "score": 383.85625
+            },
+            "segmentId": "rm12:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9425,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.92,
+              "longestStrongRun": 38,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 36,
+              "dominantVotes": 7,
+              "dominantBucket": 0,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.19444444444444445,
+              "score": 24.0125
+            },
+            "segmentId": "rm19:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5856564748201439,
+              "comparedFrames": 139,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -1
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm12",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 8,
+        "shortlistSize": 8,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.35859262589928054,
+          "best": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 221,
+              "dominantVotes": 105,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 76,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.4751131221719457,
+              "score": 391.85625
+            },
+            "segmentId": "rm12:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.943125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.92,
+              "longestStrongRun": 20,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 36,
+              "dominantVotes": 7,
+              "dominantBucket": 0,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.19444444444444445,
+              "score": 24.0125
+            },
+            "segmentId": "rm19:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5845323741007195,
+              "comparedFrames": 139,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -1
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm14",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm14",
+          "margin": 0.3298792016806722,
+          "best": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 198,
+              "dominantVotes": 116,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 90,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5858585858585859,
+              "score": 438.86875
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.944375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.94,
+              "longestStrongRun": 31,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 8,
+              "dominantVotes": 2,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.25,
+              "score": 7
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6144957983193278,
+              "comparedFrames": 119,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -21
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm14",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm14",
+          "margin": 0.3291741071428571,
+          "best": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 192,
+              "dominantVotes": 111,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 87,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.578125,
+              "score": 420.86875
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9446875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.96,
+              "longestStrongRun": 42,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 8,
+              "dominantVotes": 2,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.25,
+              "score": 7
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6155133928571429,
+              "comparedFrames": 112,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -28
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm14",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm14",
+          "margin": 0.3311272321428571,
+          "best": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 193,
+              "dominantVotes": 112,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 88,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5803108808290155,
+              "score": 424.86875
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9446875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.96,
+              "longestStrongRun": 41,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 8,
+              "dominantVotes": 2,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.25,
+              "score": 7
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6135602678571429,
+              "comparedFrames": 112,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -28
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm14",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm14",
+          "margin": 0.32664128151260496,
+          "best": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 175,
+              "dominantVotes": 102,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 81,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5828571428571429,
+              "score": 387.86875
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9421875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 40,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 8,
+              "dominantVotes": 2,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.25,
+              "score": 7
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.615546218487395,
+              "comparedFrames": 119,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -21
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm16",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm16",
+          "margin": 0.3631518817204301,
+          "best": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 154,
+              "dominantVotes": 106,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 81,
+              "evidenceSpan": 132,
+              "offsetConsistency": 0.6883116883116883,
+              "score": 399.825
+            },
+            "segmentId": "rm16:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.943125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.94,
+              "longestStrongRun": 36,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 7,
+              "dominantVotes": 2,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.2857142857142857,
+              "score": 7
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5799731182795699,
+              "comparedFrames": 93,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -47
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm16",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm16",
+          "margin": 0.3625033602150538,
+          "best": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 156,
+              "dominantVotes": 107,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 81,
+              "evidenceSpan": 128,
+              "offsetConsistency": 0.6858974358974359,
+              "score": 402.8
+            },
+            "segmentId": "rm16:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9428125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.92,
+              "longestStrongRun": 36,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 9,
+              "dominantVotes": 3,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.3333333333333333,
+              "score": 11.00625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5803091397849462,
+              "comparedFrames": 93,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -47
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm16",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 12,
+        "shortlistSize": 12,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm16",
+          "margin": 0.3608467741935484,
+          "best": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 153,
+              "dominantVotes": 104,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 79,
+              "evidenceSpan": 128,
+              "offsetConsistency": 0.6797385620915033,
+              "score": 391.8
+            },
+            "segmentId": "rm16:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9425,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.93,
+              "longestStrongRun": 36,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 9,
+              "dominantVotes": 3,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.3333333333333333,
+              "score": 11.00625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5816532258064516,
+              "comparedFrames": 93,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -47
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm16",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm16",
+          "margin": 0.36344086021505373,
+          "best": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 155,
+              "dominantVotes": 108,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 83,
+              "evidenceSpan": 135,
+              "offsetConsistency": 0.6967741935483871,
+              "score": 407.84375
+            },
+            "segmentId": "rm16:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.94375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.96,
+              "longestStrongRun": 36,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 9,
+              "dominantVotes": 3,
+              "dominantBucket": -13,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.3333333333333333,
+              "score": 11.00625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5803091397849462,
+              "comparedFrames": 93,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -47
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm18",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm18",
+          "margin": 0.326577380952381,
+          "best": {
+            "recordingId": "rm18",
+            "retrieval": {
+              "recordingId": "rm18",
+              "totalVotes": 481,
+              "dominantVotes": 136,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 92,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.28274428274428276,
+              "score": 500.86875
+            },
+            "segmentId": "rm18:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.96125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.95,
+              "longestStrongRun": 54,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 2,
+              "dominantVotes": 2,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 1,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6346726190476191,
+              "comparedFrames": 84,
+              "strongFrameProportion": 0.011904761904761904,
+              "longestStrongRun": 1,
+              "offsetFrames": -56
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm18",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm18",
+          "margin": 0.32794642857142864,
+          "best": {
+            "recordingId": "rm18",
+            "retrieval": {
+              "recordingId": "rm18",
+              "totalVotes": 479,
+              "dominantVotes": 136,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 92,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.2839248434237996,
+              "score": 500.86875
+            },
+            "segmentId": "rm18:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.961875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.97,
+              "longestStrongRun": 54,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 2,
+              "dominantVotes": 2,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 1,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6339285714285714,
+              "comparedFrames": 84,
+              "strongFrameProportion": 0.011904761904761904,
+              "longestStrongRun": 1,
+              "offsetFrames": -56
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm18",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm18",
+          "margin": 0.32794642857142864,
+          "best": {
+            "recordingId": "rm18",
+            "retrieval": {
+              "recordingId": "rm18",
+              "totalVotes": 479,
+              "dominantVotes": 136,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 92,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.2839248434237996,
+              "score": 500.86875
+            },
+            "segmentId": "rm18:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.961875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.96,
+              "longestStrongRun": 54,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 2,
+              "dominantVotes": 2,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 1,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6339285714285714,
+              "comparedFrames": 84,
+              "strongFrameProportion": 0.011904761904761904,
+              "longestStrongRun": 1,
+              "offsetFrames": -56
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm18",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm18",
+          "margin": 0.3276339285714286,
+          "best": {
+            "recordingId": "rm18",
+            "retrieval": {
+              "recordingId": "rm18",
+              "totalVotes": 479,
+              "dominantVotes": 136,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 92,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.2839248434237996,
+              "score": 500.86875
+            },
+            "segmentId": "rm18:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9615625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.95,
+              "longestStrongRun": 54,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 2,
+              "dominantVotes": 2,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 1,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6339285714285714,
+              "comparedFrames": 84,
+              "strongFrameProportion": 0.011904761904761904,
+              "longestStrongRun": 1,
+              "offsetFrames": -56
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm20",
+        "expectedKnown": true,
+        "transformation": "MP3 64 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3193841019417476,
+          "best": {
+            "recordingId": "rm20",
+            "retrieval": {
+              "recordingId": "rm20",
+              "totalVotes": 216,
+              "dominantVotes": 126,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 85,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.5833333333333334,
+              "score": 463.8625
+            },
+            "segmentId": "rm20:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9446875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.88,
+              "longestStrongRun": 19,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 32,
+              "dominantVotes": 5,
+              "dominantBucket": 27,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.15625,
+              "score": 18.0125
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6253033980582524,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -37
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm20",
+        "expectedKnown": true,
+        "transformation": "MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3187864077669902,
+          "best": {
+            "recordingId": "rm20",
+            "retrieval": {
+              "recordingId": "rm20",
+              "totalVotes": 215,
+              "dominantVotes": 124,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 85,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.5767441860465117,
+              "score": 457.86875
+            },
+            "segmentId": "rm20:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.945,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 21,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 32,
+              "dominantVotes": 5,
+              "dominantBucket": 27,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.15625,
+              "score": 18.0125
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6262135922330098,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -37
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm20",
+        "expectedKnown": true,
+        "transformation": "MP3 320 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3187955097087378,
+          "best": {
+            "recordingId": "rm20",
+            "retrieval": {
+              "recordingId": "rm20",
+              "totalVotes": 215,
+              "dominantVotes": 124,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 84,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.5767441860465117,
+              "score": 456.8625
+            },
+            "segmentId": "rm20:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9453125,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.9,
+              "longestStrongRun": 19,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 32,
+              "dominantVotes": 5,
+              "dominantBucket": 27,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.15625,
+              "score": 18.0125
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6265169902912622,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -37
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm20",
+        "expectedKnown": true,
+        "transformation": "Opus 96 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3194205097087378,
+          "best": {
+            "recordingId": "rm20",
+            "retrieval": {
+              "recordingId": "rm20",
+              "totalVotes": 217,
+              "dominantVotes": 128,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 88,
+              "evidenceSpan": 138,
+              "offsetConsistency": 0.5898617511520737,
+              "score": 472.8625
+            },
+            "segmentId": "rm20:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9459375,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 21,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 31,
+              "dominantVotes": 5,
+              "dominantBucket": 27,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.16129032258064516,
+              "score": 18.0125
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6265169902912622,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -37
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "10-second MP3 128 kbps",
+        "duration": 10,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3153630325240494,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 69,
+              "dominantVotes": 37,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 34,
+              "evidenceSpan": 57,
+              "offsetConsistency": 0.5362318840579711,
+              "score": 145.35625
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.941207627118644,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0.8983050847457628,
+              "longestStrongRun": 20,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm20",
+            "retrieval": {
+              "recordingId": "rm20",
+              "totalVotes": 4,
+              "dominantVotes": 3,
+              "dominantBucket": 44,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.75,
+              "score": 11.00625
+            },
+            "segmentId": "rm20:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6258445945945946,
+              "comparedFrames": 37,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 103
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "30-second MP3 128 kbps",
+        "duration": 30,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 13,
+        "shortlistSize": 13,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.3498205081001472,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 378,
+              "dominantVotes": 191,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 152,
+              "evidenceSpan": 220,
+              "offsetConsistency": 0.5052910052910053,
+              "score": 726
+            },
+            "segmentId": "rm02:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9674107142857142,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0.9928571428571429,
+              "longestStrongRun": 123,
+              "offsetFrames": -81
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm07",
+            "retrieval": {
+              "recordingId": "rm07",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -52,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm07:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.617590206185567,
+              "comparedFrames": 97,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -124
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "10-second MP3 128 kbps",
+        "duration": 10,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.357521186440678,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 119,
+              "dominantVotes": 48,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 38,
+              "evidenceSpan": 58,
+              "offsetConsistency": 0.40336134453781514,
+              "score": 182.3625
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9682203389830508,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0.9830508474576272,
+              "longestStrongRun": 55,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 4,
+              "dominantVotes": 2,
+              "dominantBucket": 53,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.5,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6106991525423728,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 1
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "30-second MP3 128 kbps",
+        "duration": 30,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.398617371705964,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 371,
+              "dominantVotes": 207,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 161,
+              "evidenceSpan": 220,
+              "offsetConsistency": 0.5579514824797843,
+              "score": 783
+            },
+            "segmentId": "rm04:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9790178571428572,
+              "comparedFrames": 140,
+              "strongFrameProportion": 1,
+              "longestStrongRun": 140,
+              "offsetFrames": -81
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 12,
+              "dominantVotes": 4,
+              "dominantBucket": -83,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 28,
+              "offsetConsistency": 0.3333333333333333,
+              "score": 15.175
+            },
+            "segmentId": "rm09:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5804004854368932,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -118
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "10-second MP3 128 kbps",
+        "duration": 10,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 1,
+        "shortlistSize": 1,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.930614406779661,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 42,
+              "dominantVotes": 25,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 23,
+              "evidenceSpan": 56,
+              "offsetConsistency": 0.5952380952380952,
+              "score": 98.35
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.930614406779661,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0.7966101694915254,
+              "longestStrongRun": 10,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": null
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "30-second MP3 128 kbps",
+        "duration": 30,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm06",
+          "margin": 0.3979910714285715,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 229,
+              "dominantVotes": 150,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 124,
+              "evidenceSpan": 218,
+              "offsetConsistency": 0.6550218340611353,
+              "score": 575
+            },
+            "segmentId": "rm06:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9616071428571429,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0.95,
+              "longestStrongRun": 41,
+              "offsetFrames": -81
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm11",
+            "retrieval": {
+              "recordingId": "rm11",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 8,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm11:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5636160714285714,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -51
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "10-second MP3 128 kbps",
+        "duration": 10,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3686440677966102,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 64,
+              "dominantVotes": 41,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 35,
+              "evidenceSpan": 57,
+              "offsetConsistency": 0.640625,
+              "score": 158.35625
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9470338983050848,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0.9322033898305084,
+              "longestStrongRun": 22,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 2,
+              "dominantVotes": 1,
+              "dominantBucket": -5,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.5,
+              "score": 4
+            },
+            "segmentId": "rm06:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5783898305084746,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 62
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "30-second MP3 128 kbps",
+        "duration": 30,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 14,
+        "shortlistSize": 14,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.3470848880597015,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 309,
+              "dominantVotes": 194,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 145,
+              "evidenceSpan": 218,
+              "offsetConsistency": 0.627831715210356,
+              "score": 728
+            },
+            "segmentId": "rm08:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9671875,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0.9857142857142858,
+              "longestStrongRun": 59,
+              "offsetFrames": -81
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6201026119402985,
+              "comparedFrames": 134,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -87
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "10-second MP3 128 kbps",
+        "duration": 10,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 4,
+        "shortlistSize": 4,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.3411016949152542,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 380,
+              "dominantVotes": 62,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 44,
+              "evidenceSpan": 57,
+              "offsetConsistency": 0.1631578947368421,
+              "score": 230.35625
+            },
+            "segmentId": "rm10:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9708686440677966,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0.9830508474576272,
+              "longestStrongRun": 31,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm12",
+            "retrieval": {
+              "recordingId": "rm12",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 23,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm12:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6297669491525424,
+              "comparedFrames": 59,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 64
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm10",
+        "expectedKnown": true,
+        "transformation": "30-second MP3 128 kbps",
+        "duration": 30,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 5,
+        "shortlistSize": 5,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm10",
+          "margin": 0.3310267857142858,
+          "best": {
+            "recordingId": "rm10",
+            "retrieval": {
+              "recordingId": "rm10",
+              "totalVotes": 1493,
+              "dominantVotes": 270,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 178,
+              "evidenceSpan": 219,
+              "offsetConsistency": 0.18084393837910248,
+              "score": 989
+            },
+            "segmentId": "rm10:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9823660714285715,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0.9928571428571429,
+              "longestStrongRun": 92,
+              "offsetFrames": -81
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm18",
+            "retrieval": {
+              "recordingId": "rm18",
+              "totalVotes": 11,
+              "dominantVotes": 2,
+              "dominantBucket": -69,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.18181818181818182,
+              "score": 7
+            },
+            "segmentId": "rm18:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6513392857142857,
+              "comparedFrames": 140,
+              "strongFrameProportion": 0.007142857142857143,
+              "longestStrongRun": 1,
+              "offsetFrames": 0
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm02",
+        "expectedKnown": true,
+        "transformation": "double-transcode",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 11,
+        "shortlistSize": 11,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm02",
+          "margin": 0.3589604591836735,
+          "best": {
+            "recordingId": "rm02",
+            "retrieval": {
+              "recordingId": "rm02",
+              "totalVotes": 233,
+              "dominantVotes": 118,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 94,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.5064377682403434,
+              "score": 448.85625
+            },
+            "segmentId": "rm02:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9421875,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.91,
+              "longestStrongRun": 32,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm14",
+            "retrieval": {
+              "recordingId": "rm14",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": -35,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm14:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5832270408163265,
+              "comparedFrames": 98,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -42
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm04",
+        "expectedKnown": true,
+        "transformation": "mild-eq",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 8,
+        "shortlistSize": 8,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm04",
+          "margin": 0.3714427570093458,
+          "best": {
+            "recordingId": "rm04",
+            "retrieval": {
+              "recordingId": "rm04",
+              "totalVotes": 217,
+              "dominantVotes": 96,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 76,
+              "evidenceSpan": 134,
+              "offsetConsistency": 0.4423963133640553,
+              "score": 364.8375
+            },
+            "segmentId": "rm04:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.945625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.89,
+              "longestStrongRun": 27,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm16",
+            "retrieval": {
+              "recordingId": "rm16",
+              "totalVotes": 6,
+              "dominantVotes": 2,
+              "dominantBucket": 53,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.3333333333333333,
+              "score": 8.00625
+            },
+            "segmentId": "rm16:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5741822429906542,
+              "comparedFrames": 107,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -33
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm06",
+        "expectedKnown": true,
+        "transformation": "low-level tone overlay",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 2,
+        "shortlistSize": 2,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.3866666666666667,
+          "best": {
+            "recordingId": "rm06",
+            "retrieval": {
+              "recordingId": "rm06",
+              "totalVotes": 134,
+              "dominantVotes": 89,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 72,
+              "evidenceSpan": 137,
+              "offsetConsistency": 0.664179104477612,
+              "score": 339.85625
+            },
+            "segmentId": "rm06:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.935625,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.81,
+              "longestStrongRun": 15,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm09",
+            "retrieval": {
+              "recordingId": "rm09",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 75,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm09:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5489583333333333,
+              "comparedFrames": 120,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 20
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "rm08",
+        "expectedKnown": true,
+        "transformation": "low-level tone overlay",
+        "duration": 20,
+        "retrievalCorrectRank": 1,
+        "retrievalLost": false,
+        "candidateCount": 10,
+        "shortlistSize": 10,
+        "decision": {
+          "matched": true,
+          "recordingId": "rm08",
+          "margin": 0.3377616279069767,
+          "best": {
+            "recordingId": "rm08",
+            "retrieval": {
+              "recordingId": "rm08",
+              "totalVotes": 201,
+              "dominantVotes": 123,
+              "dominantBucket": 20,
+              "distinctQueryPositions": 88,
+              "evidenceSpan": 139,
+              "offsetConsistency": 0.6119402985074627,
+              "score": 457.86875
+            },
+            "segmentId": "rm08:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.9475,
+              "comparedFrames": 100,
+              "strongFrameProportion": 0.93,
+              "longestStrongRun": 34,
+              "offsetFrames": 40
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm13",
+            "retrieval": {
+              "recordingId": "rm13",
+              "totalVotes": 8,
+              "dominantVotes": 4,
+              "dominantBucket": 30,
+              "distinctQueryPositions": 3,
+              "evidenceSpan": 2,
+              "offsetConsistency": 0.5,
+              "score": 15.0125
+            },
+            "segmentId": "rm13:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6097383720930233,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -54
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "ru02",
+        "expectedKnown": false,
+        "transformation": "unknown MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": null,
+        "retrievalLost": false,
+        "candidateCount": 6,
+        "shortlistSize": 6,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.019093656646751334,
+          "best": {
+            "recordingId": "rm03",
+            "retrieval": {
+              "recordingId": "rm03",
+              "totalVotes": 12,
+              "dominantVotes": 3,
+              "dominantBucket": 52,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.25,
+              "score": 11.00625
+            },
+            "segmentId": "rm03:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6107402912621359,
+              "comparedFrames": 103,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 37
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm11",
+            "retrieval": {
+              "recordingId": "rm11",
+              "totalVotes": 4,
+              "dominantVotes": 2,
+              "dominantBucket": 14,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.5,
+              "score": 7
+            },
+            "segmentId": "rm11:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5916466346153846,
+              "comparedFrames": 104,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 36
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "ru04",
+        "expectedKnown": false,
+        "transformation": "unknown MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": null,
+        "retrievalLost": false,
+        "candidateCount": 8,
+        "shortlistSize": 8,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.006445002644103637,
+          "best": {
+            "recordingId": "rm15",
+            "retrieval": {
+              "recordingId": "rm15",
+              "totalVotes": 24,
+              "dominantVotes": 6,
+              "dominantBucket": -49,
+              "distinctQueryPositions": 4,
+              "evidenceSpan": 3,
+              "offsetConsistency": 0.25,
+              "score": 22.01875
+            },
+            "segmentId": "rm15:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5912298387096774,
+              "comparedFrames": 124,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -16
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 3,
+              "dominantVotes": 2,
+              "dominantBucket": -17,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.6666666666666666,
+              "score": 7
+            },
+            "segmentId": "rm19:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5847848360655737,
+              "comparedFrames": 122,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -18
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "ru06",
+        "expectedKnown": false,
+        "transformation": "unknown MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": null,
+        "retrievalLost": false,
+        "candidateCount": 9,
+        "shortlistSize": 9,
+        "decision": {
+          "matched": false,
+          "reason": "weak-similarity",
+          "margin": 0.013392857142857206,
+          "best": {
+            "recordingId": "rm15",
+            "retrieval": {
+              "recordingId": "rm15",
+              "totalVotes": 17,
+              "dominantVotes": 2,
+              "dominantBucket": 80,
+              "distinctQueryPositions": 2,
+              "evidenceSpan": 1,
+              "offsetConsistency": 0.11764705882352941,
+              "score": 8.00625
+            },
+            "segmentId": "rm15:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.6446428571428572,
+              "comparedFrames": 105,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 35
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm19",
+            "retrieval": {
+              "recordingId": "rm19",
+              "totalVotes": 5,
+              "dominantVotes": 2,
+              "dominantBucket": 70,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 0.4,
+              "score": 7
+            },
+            "segmentId": "rm19:0-20",
+            "metrics": {
+              "averageBitSimilarity": 0.63125,
+              "comparedFrames": 90,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 50
+            }
+          }
+        }
+      },
+      {
+        "recordingId": "ru08",
+        "expectedKnown": false,
+        "transformation": "unknown MP3 128 kbps",
+        "duration": 20,
+        "retrievalCorrectRank": null,
+        "retrievalLost": false,
+        "candidateCount": 6,
+        "shortlistSize": 6,
+        "decision": {
+          "matched": false,
+          "reason": "insufficient-aligned-evidence",
+          "margin": 0.009858701868090014,
+          "best": {
+            "recordingId": "rm11",
+            "retrieval": {
+              "recordingId": "rm11",
+              "totalVotes": 1,
+              "dominantVotes": 1,
+              "dominantBucket": 77,
+              "distinctQueryPositions": 1,
+              "evidenceSpan": 0,
+              "offsetConsistency": 1,
+              "score": 4
+            },
+            "segmentId": "rm11:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5901639344262295,
+              "comparedFrames": 122,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": -18
+            }
+          },
+          "runnerUp": {
+            "recordingId": "rm05",
+            "retrieval": {
+              "recordingId": "rm05",
+              "totalVotes": 6,
+              "dominantVotes": 5,
+              "dominantBucket": 87,
+              "distinctQueryPositions": 4,
+              "evidenceSpan": 3,
+              "offsetConsistency": 0.8333333333333334,
+              "score": 19.01875
+            },
+            "segmentId": "rm05:15-20",
+            "metrics": {
+              "averageBitSimilarity": 0.5803052325581395,
+              "comparedFrames": 86,
+              "strongFrameProportion": 0,
+              "longestStrongRun": 0,
+              "offsetFrames": 54
+            }
+          }
+        }
+      }
+    ]
+  }
+}
