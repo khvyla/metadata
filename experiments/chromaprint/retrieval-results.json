@@ -1,0 +1,3226 @@
+{
+  "generatedAt": "2026-08-23T09:56:02.718Z",
+  "coreSegments": 120,
+  "queryCount": 105,
+  "measured": {
+    "sampled-frame-buckets": {
+      "approach": "sampled-frame-buckets",
+      "indexBuildMs": 0.9921,
+      "indexStats": {
+        "tokenCount": 42,
+        "postingCount": 178,
+        "maxTokenFrequency": 12,
+        "medianTokenFrequency": 4,
+        "estimatedBytes": 3104
+      },
+      "recalls": {
+        "1": 0.8857142857142857,
+        "5": 1,
+        "10": 1,
+        "20": 1,
+        "50": 1
+      },
+      "missingRate": 0,
+      "averageCandidateSegments": 5.257142857142857,
+      "averageCandidateRecordings": 1.3142857142857143,
+      "medianCandidateSegments": 4,
+      "medianCandidateRecordings": 1,
+      "medianQueryLatencyMs": 0.0046,
+      "rows": [
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            5,
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            60,
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            65,
+            66,
+            67
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r20",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r25",
+          "correctRank": 2,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            5,
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            22,
+            21,
+            23
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            46,
+            47,
+            45
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            5,
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            22,
+            21,
+            23
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            46,
+            47,
+            45
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            60,
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            60,
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            65,
+            66,
+            67
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            65,
+            66,
+            67
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r20",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r20",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r25",
+          "correctRank": 2,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r25",
+          "correctRank": 2,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        }
+      ],
+      "byKind": {
+        "20s-overlap-mp3": {
+          "recalls": {
+            "1": 0.8666666666666667,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.333333333333333,
+          "averageCandidateRecordings": 1.3333333333333333,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "20s-codec-opus": {
+          "recalls": {
+            "1": 1,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 4.8,
+          "averageCandidateRecordings": 1.2,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "10s": {
+          "recalls": {
+            "1": 0.8666666666666667,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.333333333333333,
+          "averageCandidateRecordings": 1.3333333333333333,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "30s": {
+          "recalls": {
+            "1": 0.8666666666666667,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.333333333333333,
+          "averageCandidateRecordings": 1.3333333333333333,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        }
+      },
+      "detailedMatcherTop20": {
+        "queries": 30,
+        "correctAfterTop20": 29,
+        "missingFromTop20": 0
+      }
+    },
+    "quantized-frame-shingles": {
+      "approach": "quantized-frame-shingles",
+      "indexBuildMs": 0.452,
+      "indexStats": {
+        "tokenCount": 85,
+        "postingCount": 302,
+        "maxTokenFrequency": 12,
+        "medianTokenFrequency": 4,
+        "estimatedBytes": 5816
+      },
+      "recalls": {
+        "1": 0.9428571428571428,
+        "5": 1,
+        "10": 1,
+        "20": 1,
+        "50": 1
+      },
+      "missingRate": 0,
+      "averageCandidateSegments": 5.257142857142857,
+      "averageCandidateRecordings": 1.3142857142857143,
+      "medianCandidateSegments": 4,
+      "medianCandidateRecordings": 1,
+      "medianQueryLatencyMs": 0.0052,
+      "rows": [
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            21,
+            20,
+            23,
+            22
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            61,
+            60,
+            62,
+            63
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            67,
+            65,
+            66
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r20",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            80,
+            81,
+            82,
+            83,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r25",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            100,
+            101,
+            102,
+            103,
+            28,
+            29,
+            30,
+            31,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "20s-overlap-mp3",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            21,
+            20,
+            23,
+            22
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            43,
+            41,
+            42
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            46,
+            47,
+            45
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "20s-codec-opus",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r00",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r01",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r02",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r03",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            12,
+            13,
+            14,
+            15,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r04",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            21,
+            23,
+            22
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r05",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            20,
+            21,
+            23,
+            22
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r06",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r07",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r08",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r09",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r10",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r11",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            44,
+            46,
+            47,
+            45
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r12",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            48,
+            49,
+            50,
+            51
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r13",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            52,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r14",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            56,
+            57,
+            58,
+            59
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            60,
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r15",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            60,
+            62,
+            63,
+            61
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            65,
+            66,
+            67
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r16",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            64,
+            67,
+            66,
+            65
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r17",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r18",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r19",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            76,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r20",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r20",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            80,
+            81,
+            82,
+            83,
+            12,
+            13,
+            14,
+            15,
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r21",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            84,
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r22",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r23",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r24",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            96,
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r25",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            100,
+            101,
+            102,
+            103,
+            28,
+            29,
+            30,
+            31,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r25",
+          "correctRank": 1,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            100,
+            101,
+            102,
+            103,
+            28,
+            29,
+            30,
+            31,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r26",
+          "correctRank": 1,
+          "candidateSegments": 4,
+          "candidateRecordings": 1,
+          "top20SegmentIds": [
+            104,
+            105,
+            106,
+            107
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r27",
+          "correctRank": 3,
+          "candidateSegments": 12,
+          "candidateRecordings": 3,
+          "top20SegmentIds": [
+            28,
+            29,
+            30,
+            31,
+            100,
+            101,
+            102,
+            103,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r28",
+          "correctRank": 1,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "10s",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        },
+        {
+          "kind": "30s",
+          "recordingId": "r29",
+          "correctRank": 2,
+          "candidateSegments": 8,
+          "candidateRecordings": 2,
+          "top20SegmentIds": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ]
+        }
+      ],
+      "byKind": {
+        "20s-overlap-mp3": {
+          "recalls": {
+            "1": 0.9333333333333333,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.333333333333333,
+          "averageCandidateRecordings": 1.3333333333333333,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "20s-codec-opus": {
+          "recalls": {
+            "1": 1,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 4.8,
+          "averageCandidateRecordings": 1.2,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "10s": {
+          "recalls": {
+            "1": 0.9333333333333333,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.2,
+          "averageCandidateRecordings": 1.3,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        },
+        "30s": {
+          "recalls": {
+            "1": 0.9333333333333333,
+            "5": 1,
+            "10": 1,
+            "20": 1,
+            "50": 1
+          },
+          "missingRate": 0,
+          "averageCandidateSegments": 5.466666666666667,
+          "averageCandidateRecordings": 1.3666666666666667,
+          "medianCandidateSegments": 4,
+          "medianCandidateRecordings": 1
+        }
+      },
+      "detailedMatcherTop20": {
+        "queries": 30,
+        "correctAfterTop20": 29,
+        "missingFromTop20": 0
+      }
+    }
+  },
+  "scales": [
+    {
+      "segmentCount": 1000,
+      "indexBuildMs": 1.1604,
+      "medianQueryLatencyMs": 0.0044,
+      "averageCandidateRecordings": 1.3333333333333333,
+      "medianCandidateRecordings": 1,
+      "indexStats": {
+        "tokenCount": 353,
+        "postingCount": 1487,
+        "maxTokenFrequency": 12,
+        "medianTokenFrequency": 4,
+        "estimatedBytes": 26016
+      },
+      "note": "Measured with salted token-level distractors for build, memory, and latency only; retrieval accuracy remains measured only on the real generated corpus."
+    },
+    {
+      "segmentCount": 10000,
+      "indexBuildMs": 10.1311,
+      "medianQueryLatencyMs": 0.0045,
+      "averageCandidateRecordings": 1.3333333333333333,
+      "medianCandidateRecordings": 1,
+      "indexStats": {
+        "tokenCount": 3503,
+        "postingCount": 14837,
+        "maxTokenFrequency": 12,
+        "medianTokenFrequency": 4,
+        "estimatedBytes": 258816
+      },
+      "note": "Measured with salted token-level distractors for build, memory, and latency only; retrieval accuracy remains measured only on the real generated corpus."
+    },
+    {
+      "segmentCount": 100000,
+      "indexBuildMs": 81.2648,
+      "medianQueryLatencyMs": 0.0048,
+      "averageCandidateRecordings": 1.3333333333333333,
+      "medianCandidateRecordings": 1,
+      "indexStats": {
+        "tokenCount": 35003,
+        "postingCount": 148337,
+        "maxTokenFrequency": 12,
+        "medianTokenFrequency": 4,
+        "estimatedBytes": 2586816
+      },
+      "note": "Measured with salted token-level distractors for build, memory, and latency only; retrieval accuracy remains measured only on the real generated corpus."
+    }
+  ]
+}
