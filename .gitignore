@@ -86,6 +86,7 @@ experiments/chromaprint/samples/*.mp3
 experiments/chromaprint/samples/*.opus
 experiments/chromaprint/samples/calibration/
 experiments/chromaprint/samples/real-music/
+experiments/chromaprint/samples/independent-corpus/
 .output
 
 # Gatsby files

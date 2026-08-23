@@ -1,0 +1,5009 @@
+{
+  "generatedAt": "2026-08-23T23:24:17.934Z",
+  "frozenPipeline": {
+    "retrieval": {
+      "tokenKind": "medium-frame",
+      "offsetBucketFrames": 2,
+      "shortlist": 5
+    },
+    "matcher": {
+      "minimumAverage": 0.92,
+      "minimumStrongProportion": 0.6,
+      "minimumRun": 24,
+      "minimumFrames": 40,
+      "minimumDominantVotes": 2,
+      "minimumMargin": 0.03
+    }
+  },
+  "corpus": {
+    "indexed": 20,
+    "unknownOnly": 8,
+    "sourceManifest": "independent-corpus-manifest.json"
+  },
+  "retrieval": {
+    "indexTokens": 3553,
+    "indexPostings": 5600,
+    "metrics": {
+      "recallAt1": 1,
+      "recallAt5": 1,
+      "missingRate": 0
+    }
+  },
+  "matcher": {
+    "known": {
+      "total": 127,
+      "correct": 90,
+      "wrong": 0,
+      "rejected": 37
+    },
+    "unknown": {
+      "total": 8,
+      "rejected": 8,
+      "falselyAccepted": 0
+    },
+    "precision": 1,
+    "recall": 0.7086614173228346,
+    "falsePositiveRate": 0,
+    "rejectionRate": 0.3333333333333333
+  },
+  "byTransformation": {
+    "double-transcode": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "rejected": 1,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "duration-10": {
+      "total": 20,
+      "correct": 10,
+      "wrong": 0,
+      "rejected": 10,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "duration-30": {
+      "total": 20,
+      "correct": 20,
+      "wrong": 0,
+      "rejected": 0,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "gain": {
+      "total": 1,
+      "correct": 1,
+      "wrong": 0,
+      "rejected": 0,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "loudnorm": {
+      "total": 1,
+      "correct": 1,
+      "wrong": 0,
+      "rejected": 0,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "mild-eq": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "rejected": 1,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "mono": {
+      "total": 1,
+      "correct": 1,
+      "wrong": 0,
+      "rejected": 0,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "mp3-128": {
+      "total": 20,
+      "correct": 16,
+      "wrong": 0,
+      "rejected": 4,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "mp3-320": {
+      "total": 20,
+      "correct": 16,
+      "wrong": 0,
+      "rejected": 4,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "mp3-64": {
+      "total": 20,
+      "correct": 12,
+      "wrong": 0,
+      "rejected": 8,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "noise-overlay": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "rejected": 1,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "opus-96": {
+      "total": 20,
+      "correct": 13,
+      "wrong": 0,
+      "rejected": 7,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    },
+    "tone-overlay": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "rejected": 1,
+      "retrieval": {
+        "recallAt1": 1,
+        "recallAt5": 1,
+        "missingRate": 0
+      }
+    }
+  },
+  "evidence": {
+    "knownCorrect": {
+      "count": 90,
+      "bestSimilarity": {
+        "min": 0.935937,
+        "median": 0.949375,
+        "max": 0.975893
+      },
+      "margin": {
+        "min": 0.052436,
+        "median": 0.350349,
+        "max": 0.972321
+      },
+      "dominantVotes": {
+        "min": 26,
+        "median": 114.5,
+        "max": 239
+      },
+      "evidenceSpan": {
+        "min": 49,
+        "median": 138,
+        "max": 220
+      }
+    },
+    "unknown": {
+      "count": 8,
+      "bestSimilarity": {
+        "min": 0.549063,
+        "median": 0.576046,
+        "max": 0.606534
+      },
+      "margin": {
+        "min": 0.002691,
+        "median": 0.029606,
+        "max": 0.574483
+      },
+      "dominantVotes": {
+        "min": 1,
+        "median": 1,
+        "max": 2
+      },
+      "evidenceSpan": {
+        "min": 0,
+        "median": 0,
+        "max": 4
+      }
+    }
+  },
+  "failureReasons": {
+    "insufficient-evidence": 27,
+    "short-sample-or-insufficient-evidence": 10
+  },
+  "rows": [
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.321116,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.937187,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 24,
+          "alignedFrames": 100,
+          "dominantVotes": 88,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.616071,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.318149,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.935937,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 82,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.617788,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.320398,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.9375,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 85,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.617102,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.319025,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.9375,
+          "strongFrameProportion": 0.87,
+          "longestStrongRun": 23,
+          "alignedFrames": 100,
+          "dominantVotes": 82,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.618475,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.301377,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.941208,
+          "strongFrameProportion": 0.898305,
+          "longestStrongRun": 28,
+          "alignedFrames": 59,
+          "dominantVotes": 26,
+          "evidenceSpan": 58
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.639831,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.344488,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:15-20",
+          "similarity": 0.962277,
+          "strongFrameProportion": 0.985714,
+          "longestStrongRun": 124,
+          "alignedFrames": 140,
+          "dominantVotes": 145,
+          "evidenceSpan": 220
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.617788,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.329159,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.947187,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 21,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.618029,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 130,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic02",
+        "reason": null,
+        "margin": 0.326034,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.947187,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 26,
+          "alignedFrames": 100,
+          "dominantVotes": 119,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.621154,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 130,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic02",
+        "reason": null,
+        "margin": 0.327981,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.949375,
+          "strongFrameProportion": 0.93,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 121,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.621394,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 130,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic02",
+        "reason": null,
+        "margin": 0.327668,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.949063,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 33,
+          "alignedFrames": 100,
+          "dominantVotes": 116,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.621394,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 130,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.346917,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.943856,
+          "strongFrameProportion": 0.932203,
+          "longestStrongRun": 19,
+          "alignedFrames": 59,
+          "dominantVotes": 36,
+          "evidenceSpan": 58
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.596939,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 49,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic02",
+        "reason": null,
+        "margin": 0.354688,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.971875,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 72,
+          "alignedFrames": 140,
+          "dominantVotes": 189,
+          "evidenceSpan": 218
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.617188,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 140,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.349306,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.946875,
+          "strongFrameProportion": 0.93,
+          "longestStrongRun": 26,
+          "alignedFrames": 100,
+          "dominantVotes": 115,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.597569,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.348507,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.947812,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 117,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.599306,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.3475,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.9475,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 114,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.6,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.345938,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.945937,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 36,
+          "alignedFrames": 100,
+          "dominantVotes": 113,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.6,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.345317,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.945445,
+          "strongFrameProportion": 0.932203,
+          "longestStrongRun": 30,
+          "alignedFrames": 59,
+          "dominantVotes": 36,
+          "evidenceSpan": 55
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.600128,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 49,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.374714,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:15-20",
+          "similarity": 0.967634,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 93,
+          "alignedFrames": 140,
+          "dominantVotes": 187,
+          "evidenceSpan": 218
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.59292,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 113,
+          "dominantVotes": 2,
+          "evidenceSpan": 74
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.369924,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.940312,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 22,
+          "alignedFrames": 100,
+          "dominantVotes": 105,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.570388,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 103,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic04",
+        "reason": null,
+        "margin": 0.374509,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.945937,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 108,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.571429,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic04",
+        "reason": null,
+        "margin": 0.374447,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.946562,
+          "strongFrameProportion": 0.95,
+          "longestStrongRun": 33,
+          "alignedFrames": 100,
+          "dominantVotes": 115,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.572115,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.368756,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.941875,
+          "strongFrameProportion": 0.93,
+          "longestStrongRun": 23,
+          "alignedFrames": 100,
+          "dominantVotes": 108,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.573119,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 103,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.347153,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.950212,
+          "strongFrameProportion": 0.915254,
+          "longestStrongRun": 20,
+          "alignedFrames": 59,
+          "dominantVotes": 35,
+          "evidenceSpan": 57
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.603059,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 47,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic04",
+        "reason": null,
+        "margin": 0.35884,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.969866,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 131,
+          "alignedFrames": 140,
+          "dominantVotes": 185,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.611026,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 123,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic05",
+        "reason": null,
+        "margin": 0.089241,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.939375,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 107,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.850134,
+          "strongFrameProportion": 0.268817,
+          "longestStrongRun": 5,
+          "alignedFrames": 93,
+          "dominantVotes": 20,
+          "evidenceSpan": 119
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic05",
+        "reason": null,
+        "margin": 0.08953,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.94,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 113,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.85047,
+          "strongFrameProportion": 0.247312,
+          "longestStrongRun": 4,
+          "alignedFrames": 93,
+          "dominantVotes": 22,
+          "evidenceSpan": 119
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic05",
+        "reason": null,
+        "margin": 0.090467,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.940937,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 114,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.85047,
+          "strongFrameProportion": 0.247312,
+          "longestStrongRun": 4,
+          "alignedFrames": 93,
+          "dominantVotes": 21,
+          "evidenceSpan": 119
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.093421,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.941875,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 21,
+          "alignedFrames": 100,
+          "dominantVotes": 112,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.848454,
+          "strongFrameProportion": 0.236559,
+          "longestStrongRun": 4,
+          "alignedFrames": 93,
+          "dominantVotes": 24,
+          "evidenceSpan": 119
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.071504,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.944386,
+          "strongFrameProportion": 0.915254,
+          "longestStrongRun": 23,
+          "alignedFrames": 59,
+          "dominantVotes": 37,
+          "evidenceSpan": 57
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.872881,
+          "strongFrameProportion": 0.40678,
+          "longestStrongRun": 5,
+          "alignedFrames": 59,
+          "dominantVotes": 12,
+          "evidenceSpan": 54
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic05",
+        "reason": null,
+        "margin": 0.127455,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:15-20",
+          "similarity": 0.969866,
+          "strongFrameProportion": 0.971429,
+          "longestStrongRun": 51,
+          "alignedFrames": 140,
+          "dominantVotes": 202,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.842411,
+          "strongFrameProportion": 0.228571,
+          "longestStrongRun": 4,
+          "alignedFrames": 140,
+          "dominantVotes": 25,
+          "evidenceSpan": 172
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.939063,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.939063,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 16,
+          "alignedFrames": 100,
+          "dominantVotes": 115,
+          "evidenceSpan": 138
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.939375,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.939375,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 16,
+          "alignedFrames": 100,
+          "dominantVotes": 120,
+          "evidenceSpan": 138
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.939375,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.939375,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 16,
+          "alignedFrames": 100,
+          "dominantVotes": 117,
+          "evidenceSpan": 138
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.937187,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.937187,
+          "strongFrameProportion": 0.83,
+          "longestStrongRun": 15,
+          "alignedFrames": 100,
+          "dominantVotes": 108,
+          "evidenceSpan": 138
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.935381,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.935381,
+          "strongFrameProportion": 0.847458,
+          "longestStrongRun": 14,
+          "alignedFrames": 59,
+          "dominantVotes": 37,
+          "evidenceSpan": 56
+        },
+        "runnerUp": null
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic06",
+        "reason": null,
+        "margin": 0.972321,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:15-20",
+          "similarity": 0.972321,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 132,
+          "alignedFrames": 140,
+          "dominantVotes": 198,
+          "evidenceSpan": 219
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.26278,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.950937,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 39,
+          "alignedFrames": 100,
+          "dominantVotes": 114,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.688158,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.259868,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.95,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 136
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.690132,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.260197,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.95,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 136
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.689803,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.26023,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.949375,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 107,
+          "evidenceSpan": 136
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.689145,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.255275,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.949153,
+          "strongFrameProportion": 0.898305,
+          "longestStrongRun": 31,
+          "alignedFrames": 59,
+          "dominantVotes": 40,
+          "evidenceSpan": 53
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.693878,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 49,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic07",
+        "reason": null,
+        "margin": 0.292187,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:15-20",
+          "similarity": 0.969866,
+          "strongFrameProportion": 0.985714,
+          "longestStrongRun": 94,
+          "alignedFrames": 140,
+          "dominantVotes": 184,
+          "evidenceSpan": 217
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.677679,
+          "strongFrameProportion": 0.007143,
+          "longestStrongRun": 1,
+          "alignedFrames": 140,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.057004,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.942813,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 44,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 134
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.885808,
+          "strongFrameProportion": 0.481203,
+          "longestStrongRun": 14,
+          "alignedFrames": 133,
+          "dominantVotes": 24,
+          "evidenceSpan": 117
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.056299,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.942813,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 44,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 134
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.886513,
+          "strongFrameProportion": 0.481203,
+          "longestStrongRun": 14,
+          "alignedFrames": 133,
+          "dominantVotes": 25,
+          "evidenceSpan": 122
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.056299,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.942813,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 44,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 134
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.886513,
+          "strongFrameProportion": 0.481203,
+          "longestStrongRun": 14,
+          "alignedFrames": 133,
+          "dominantVotes": 25,
+          "evidenceSpan": 122
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.058884,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.942813,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 44,
+          "alignedFrames": 100,
+          "dominantVotes": 109,
+          "evidenceSpan": 132
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.883929,
+          "strongFrameProportion": 0.443609,
+          "longestStrongRun": 14,
+          "alignedFrames": 133,
+          "dominantVotes": 24,
+          "evidenceSpan": 122
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.052436,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:0-20",
+          "similarity": 0.944915,
+          "strongFrameProportion": 0.932203,
+          "longestStrongRun": 44,
+          "alignedFrames": 59,
+          "dominantVotes": 36,
+          "evidenceSpan": 49
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.892479,
+          "strongFrameProportion": 0.508475,
+          "longestStrongRun": 14,
+          "alignedFrames": 59,
+          "dominantVotes": 16,
+          "evidenceSpan": 53
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic08",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic08",
+        "reason": null,
+        "margin": 0.080451,
+        "best": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.966964,
+          "strongFrameProportion": 0.985714,
+          "longestStrongRun": 110,
+          "alignedFrames": 140,
+          "dominantVotes": 187,
+          "evidenceSpan": 215
+        },
+        "runnerUp": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.886513,
+          "strongFrameProportion": 0.481203,
+          "longestStrongRun": 14,
+          "alignedFrames": 133,
+          "dominantVotes": 31,
+          "evidenceSpan": 182
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.350167,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:0-20",
+          "similarity": 0.931562,
+          "strongFrameProportion": 0.82,
+          "longestStrongRun": 17,
+          "alignedFrames": 100,
+          "dominantVotes": 88,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.581395,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 86,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.350869,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:0-20",
+          "similarity": 0.933125,
+          "strongFrameProportion": 0.83,
+          "longestStrongRun": 16,
+          "alignedFrames": 100,
+          "dominantVotes": 90,
+          "evidenceSpan": 135
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.582256,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.353948,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:0-20",
+          "similarity": 0.936562,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 14,
+          "alignedFrames": 100,
+          "dominantVotes": 98,
+          "evidenceSpan": 135
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.582615,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.356103,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:0-20",
+          "similarity": 0.936562,
+          "strongFrameProportion": 0.83,
+          "longestStrongRun": 17,
+          "alignedFrames": 100,
+          "dominantVotes": 97,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.58046,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.315148,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:0-20",
+          "similarity": 0.929025,
+          "strongFrameProportion": 0.79661,
+          "longestStrongRun": 16,
+          "alignedFrames": 59,
+          "dominantVotes": 25,
+          "evidenceSpan": 51
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.613877,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic09",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic09",
+        "reason": null,
+        "margin": 0.380914,
+        "best": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:15-20",
+          "similarity": 0.96317,
+          "strongFrameProportion": 0.971429,
+          "longestStrongRun": 70,
+          "alignedFrames": 140,
+          "dominantVotes": 159,
+          "evidenceSpan": 215
+        },
+        "runnerUp": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:15-20",
+          "similarity": 0.582256,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic10",
+        "reason": null,
+        "margin": 0.265584,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.941875,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 25,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 132
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.676291,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.264878,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.942187,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 20,
+          "alignedFrames": 100,
+          "dominantVotes": 103,
+          "evidenceSpan": 132
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.67731,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 6,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.264769,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.943438,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 20,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 132
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.678668,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 6,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic10",
+        "reason": null,
+        "margin": 0.263832,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.9425,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 38,
+          "alignedFrames": 100,
+          "dominantVotes": 112,
+          "evidenceSpan": 132
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.678668,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 6,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.227754,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.940148,
+          "strongFrameProportion": 0.864407,
+          "longestStrongRun": 12,
+          "alignedFrames": 59,
+          "dominantVotes": 27,
+          "evidenceSpan": 52
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:15-20",
+          "similarity": 0.712394,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 6,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic10",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic10",
+        "reason": null,
+        "margin": 0.29211,
+        "best": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:15-20",
+          "similarity": 0.96942,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 111,
+          "alignedFrames": 140,
+          "dominantVotes": 179,
+          "evidenceSpan": 215
+        },
+        "runnerUp": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.67731,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 6,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic11",
+        "reason": null,
+        "margin": 0.344539,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.953125,
+          "strongFrameProportion": 0.93,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 109,
+          "evidenceSpan": 131
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.608586,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic11",
+        "reason": null,
+        "margin": 0.345155,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.954688,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 131
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.609533,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic11",
+        "reason": null,
+        "margin": 0.344527,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.954375,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 131
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.609848,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic11",
+        "reason": null,
+        "margin": 0.343267,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.954063,
+          "strongFrameProportion": 0.92,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 131
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.610795,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.298729,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.950742,
+          "strongFrameProportion": 0.915254,
+          "longestStrongRun": 16,
+          "alignedFrames": 59,
+          "dominantVotes": 25,
+          "evidenceSpan": 50
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.652013,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic11",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 10,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic11",
+        "reason": null,
+        "margin": 0.358324,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.967857,
+          "strongFrameProportion": 0.985714,
+          "longestStrongRun": 112,
+          "alignedFrames": 140,
+          "dominantVotes": 187,
+          "evidenceSpan": 209
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.609533,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.35994,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:0-20",
+          "similarity": 0.94,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 15,
+          "alignedFrames": 100,
+          "dominantVotes": 131,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.58006,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 105,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic12",
+        "reason": null,
+        "margin": 0.359886,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:0-20",
+          "similarity": 0.941562,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 134,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.581676,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 88,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic12",
+        "reason": null,
+        "margin": 0.361307,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:0-20",
+          "similarity": 0.941562,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 32,
+          "alignedFrames": 100,
+          "dominantVotes": 130,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.580256,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 88,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.360412,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:0-20",
+          "similarity": 0.940312,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 21,
+          "alignedFrames": 100,
+          "dominantVotes": 129,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.579901,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 88,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic12",
+        "reason": null,
+        "margin": 0.334216,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:0-20",
+          "similarity": 0.943856,
+          "strongFrameProportion": 0.932203,
+          "longestStrongRun": 32,
+          "alignedFrames": 59,
+          "dominantVotes": 50,
+          "evidenceSpan": 57
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.60964,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic12",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic12",
+        "reason": null,
+        "margin": 0.378003,
+        "best": {
+          "recordingId": "ic12",
+          "segmentId": "ic12:15-20",
+          "similarity": 0.966071,
+          "strongFrameProportion": 0.985714,
+          "longestStrongRun": 86,
+          "alignedFrames": 140,
+          "dominantVotes": 203,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.588068,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 99,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.380491,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:0-20",
+          "similarity": 0.945,
+          "strongFrameProportion": 0.89,
+          "longestStrongRun": 31,
+          "alignedFrames": 100,
+          "dominantVotes": 122,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.564509,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 140,
+          "dominantVotes": 5,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.382098,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:0-20",
+          "similarity": 0.9475,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 35,
+          "alignedFrames": 100,
+          "dominantVotes": 124,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.565402,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 140,
+          "dominantVotes": 4,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.379598,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:0-20",
+          "similarity": 0.945,
+          "strongFrameProportion": 0.89,
+          "longestStrongRun": 31,
+          "alignedFrames": 100,
+          "dominantVotes": 121,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.565402,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 140,
+          "dominantVotes": 4,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.381429,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:0-20",
+          "similarity": 0.945937,
+          "strongFrameProportion": 0.88,
+          "longestStrongRun": 35,
+          "alignedFrames": 100,
+          "dominantVotes": 122,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.564509,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 140,
+          "dominantVotes": 4,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.305438,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:0-20",
+          "similarity": 0.951271,
+          "strongFrameProportion": 0.949153,
+          "longestStrongRun": 35,
+          "alignedFrames": 59,
+          "dominantVotes": 39,
+          "evidenceSpan": 54
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.645833,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 36,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic13",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic13",
+        "reason": null,
+        "margin": 0.390538,
+        "best": {
+          "recordingId": "ic13",
+          "segmentId": "ic13:15-20",
+          "similarity": 0.974777,
+          "strongFrameProportion": 1,
+          "longestStrongRun": 140,
+          "alignedFrames": 140,
+          "dominantVotes": 199,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.584239,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 4,
+          "evidenceSpan": 3
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.349851,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:0-20",
+          "similarity": 0.95625,
+          "strongFrameProportion": 0.98,
+          "longestStrongRun": 47,
+          "alignedFrames": 100,
+          "dominantVotes": 141,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.606399,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.34817,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:0-20",
+          "similarity": 0.955313,
+          "strongFrameProportion": 0.97,
+          "longestStrongRun": 77,
+          "alignedFrames": 100,
+          "dominantVotes": 147,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.607143,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.348482,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:0-20",
+          "similarity": 0.955625,
+          "strongFrameProportion": 0.97,
+          "longestStrongRun": 77,
+          "alignedFrames": 100,
+          "dominantVotes": 147,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.607143,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.350848,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:0-20",
+          "similarity": 0.956875,
+          "strongFrameProportion": 0.96,
+          "longestStrongRun": 50,
+          "alignedFrames": 100,
+          "dominantVotes": 141,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.606027,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.342097,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:0-20",
+          "similarity": 0.957097,
+          "strongFrameProportion": 0.983051,
+          "longestStrongRun": 56,
+          "alignedFrames": 59,
+          "dominantVotes": 48,
+          "evidenceSpan": 57
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.615,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 50,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic14",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic14",
+        "reason": null,
+        "margin": 0.369206,
+        "best": {
+          "recordingId": "ic14",
+          "segmentId": "ic14:15-20",
+          "similarity": 0.975,
+          "strongFrameProportion": 1,
+          "longestStrongRun": 140,
+          "alignedFrames": 140,
+          "dominantVotes": 229,
+          "evidenceSpan": 220
+        },
+        "runnerUp": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.605794,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 96,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.360693,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.965938,
+          "strongFrameProportion": 0.99,
+          "longestStrongRun": 86,
+          "alignedFrames": 100,
+          "dominantVotes": 152,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.605244,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.359709,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.965313,
+          "strongFrameProportion": 0.99,
+          "longestStrongRun": 54,
+          "alignedFrames": 100,
+          "dominantVotes": 155,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.605603,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.360162,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.964688,
+          "strongFrameProportion": 0.97,
+          "longestStrongRun": 35,
+          "alignedFrames": 100,
+          "dominantVotes": 153,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.604526,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.359474,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.96375,
+          "strongFrameProportion": 0.97,
+          "longestStrongRun": 48,
+          "alignedFrames": 100,
+          "dominantVotes": 147,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.604276,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.39036,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:0-20",
+          "similarity": 0.960805,
+          "strongFrameProportion": 0.983051,
+          "longestStrongRun": 45,
+          "alignedFrames": 59,
+          "dominantVotes": 41,
+          "evidenceSpan": 56
+        },
+        "runnerUp": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.570445,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic15",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic15",
+        "reason": null,
+        "margin": 0.370289,
+        "best": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.975893,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 80,
+          "alignedFrames": 140,
+          "dominantVotes": 239,
+          "evidenceSpan": 220
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.605603,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.37782,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.936875,
+          "strongFrameProportion": 0.83,
+          "longestStrongRun": 14,
+          "alignedFrames": 100,
+          "dominantVotes": 105,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.559055,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 127,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic16",
+        "reason": null,
+        "margin": 0.382035,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.942813,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 106,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.560778,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 127,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic16",
+        "reason": null,
+        "margin": 0.381137,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.944375,
+          "strongFrameProportion": 0.89,
+          "longestStrongRun": 36,
+          "alignedFrames": 100,
+          "dominantVotes": 113,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.563238,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 127,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic16",
+        "reason": null,
+        "margin": 0.377726,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.93875,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 36,
+          "alignedFrames": 100,
+          "dominantVotes": 112,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.561024,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 127,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.338056,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.939619,
+          "strongFrameProportion": 0.915254,
+          "longestStrongRun": 20,
+          "alignedFrames": 59,
+          "dominantVotes": 34,
+          "evidenceSpan": 55
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.601563,
+          "strongFrameProportion": 0.022727,
+          "longestStrongRun": 1,
+          "alignedFrames": 44,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic16",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic16",
+        "reason": null,
+        "margin": 0.38192,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.966295,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 107,
+          "alignedFrames": 140,
+          "dominantVotes": 167,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.584375,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 100,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.391839,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:0-20",
+          "similarity": 0.945,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 113,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.553161,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 87,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.40097,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:0-20",
+          "similarity": 0.950313,
+          "strongFrameProportion": 0.96,
+          "longestStrongRun": 34,
+          "alignedFrames": 100,
+          "dominantVotes": 126,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.549342,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.401234,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:0-20",
+          "similarity": 0.951562,
+          "strongFrameProportion": 0.96,
+          "longestStrongRun": 34,
+          "alignedFrames": 100,
+          "dominantVotes": 131,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.550329,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.401661,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:0-20",
+          "similarity": 0.949688,
+          "strongFrameProportion": 0.95,
+          "longestStrongRun": 27,
+          "alignedFrames": 100,
+          "dominantVotes": 132,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.548026,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.379143,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:0-20",
+          "similarity": 0.946504,
+          "strongFrameProportion": 0.949153,
+          "longestStrongRun": 30,
+          "alignedFrames": 59,
+          "dominantVotes": 39,
+          "evidenceSpan": 57
+        },
+        "runnerUp": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.567361,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 45,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic17",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic17",
+        "reason": null,
+        "margin": 0.397042,
+        "best": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:15-20",
+          "similarity": 0.965402,
+          "strongFrameProportion": 0.971429,
+          "longestStrongRun": 102,
+          "alignedFrames": 140,
+          "dominantVotes": 195,
+          "evidenceSpan": 216
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.568359,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 112,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.357377,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.932187,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 15,
+          "alignedFrames": 100,
+          "dominantVotes": 92,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.574811,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 132,
+          "dominantVotes": 4,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.361309,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.931562,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 21,
+          "alignedFrames": 100,
+          "dominantVotes": 90,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.570254,
+          "strongFrameProportion": 0.007519,
+          "longestStrongRun": 1,
+          "alignedFrames": 133,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.362011,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.9325,
+          "strongFrameProportion": 0.85,
+          "longestStrongRun": 19,
+          "alignedFrames": 100,
+          "dominantVotes": 91,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.570489,
+          "strongFrameProportion": 0.007519,
+          "longestStrongRun": 1,
+          "alignedFrames": 133,
+          "dominantVotes": 4,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.357557,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:0-20",
+          "similarity": 0.93,
+          "strongFrameProportion": 0.83,
+          "longestStrongRun": 19,
+          "alignedFrames": 100,
+          "dominantVotes": 87,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.572443,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 132,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.338173,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:15-20",
+          "similarity": 0.939338,
+          "strongFrameProportion": 0.882353,
+          "longestStrongRun": 13,
+          "alignedFrames": 51,
+          "dominantVotes": 31,
+          "evidenceSpan": 48
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.601165,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 59,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic18",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic18",
+        "reason": null,
+        "margin": 0.389791,
+        "best": {
+          "recordingId": "ic18",
+          "segmentId": "ic18:15-20",
+          "similarity": 0.960045,
+          "strongFrameProportion": 0.964286,
+          "longestStrongRun": 66,
+          "alignedFrames": 140,
+          "dominantVotes": 154,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:15-20",
+          "similarity": 0.570254,
+          "strongFrameProportion": 0.007519,
+          "longestStrongRun": 1,
+          "alignedFrames": 133,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.403076,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:0-20",
+          "similarity": 0.935312,
+          "strongFrameProportion": 0.86,
+          "longestStrongRun": 14,
+          "alignedFrames": 100,
+          "dominantVotes": 116,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.532237,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 95,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic19",
+        "reason": null,
+        "margin": 0.403058,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:0-20",
+          "similarity": 0.937813,
+          "strongFrameProportion": 0.89,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 117,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.534755,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 107,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic19",
+        "reason": null,
+        "margin": 0.403037,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:0-20",
+          "similarity": 0.9375,
+          "strongFrameProportion": 0.88,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 115,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.534463,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 107,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic19",
+        "reason": null,
+        "margin": 0.402202,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:0-20",
+          "similarity": 0.938125,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 114,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.535923,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 107,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic19",
+        "reason": null,
+        "margin": 0.959239,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:0-20",
+          "similarity": 0.959239,
+          "strongFrameProportion": 0.978261,
+          "longestStrongRun": 35,
+          "alignedFrames": 46,
+          "dominantVotes": 61,
+          "evidenceSpan": 53
+        },
+        "runnerUp": null
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic19",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 2,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic19",
+        "reason": null,
+        "margin": 0.436451,
+        "best": {
+          "recordingId": "ic19",
+          "segmentId": "ic19:15-20",
+          "similarity": 0.971205,
+          "strongFrameProportion": 0.992857,
+          "longestStrongRun": 118,
+          "alignedFrames": 140,
+          "dominantVotes": 188,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.534755,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 107,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "mp3-64",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic20",
+        "reason": null,
+        "margin": 0.372552,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.949375,
+          "strongFrameProportion": 0.96,
+          "longestStrongRun": 33,
+          "alignedFrames": 100,
+          "dominantVotes": 111,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.576823,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 120,
+          "dominantVotes": 3,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic20",
+        "reason": null,
+        "margin": 0.37125,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.947812,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 26,
+          "alignedFrames": 100,
+          "dominantVotes": 109,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.576562,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 120,
+          "dominantVotes": 3,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "mp3-320",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic20",
+        "reason": null,
+        "margin": 0.371146,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.947187,
+          "strongFrameProportion": 0.93,
+          "longestStrongRun": 26,
+          "alignedFrames": 100,
+          "dominantVotes": 109,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.576042,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 120,
+          "dominantVotes": 3,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "opus-96",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic20",
+        "reason": null,
+        "margin": 0.373906,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.949688,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 37,
+          "alignedFrames": 100,
+          "dominantVotes": 106,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.575781,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 120,
+          "dominantVotes": 3,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "duration-10",
+      "duration": 10,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.945445,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:0-20",
+          "similarity": 0.945445,
+          "strongFrameProportion": 0.949153,
+          "longestStrongRun": 22,
+          "alignedFrames": 59,
+          "dominantVotes": 32,
+          "evidenceSpan": 53
+        },
+        "runnerUp": null
+      },
+      "failureReason": "short-sample-or-insufficient-evidence"
+    },
+    {
+      "recordingId": "ic20",
+      "expectedKnown": true,
+      "transformation": "duration-30",
+      "duration": 30,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 9,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic20",
+        "reason": null,
+        "margin": 0.383036,
+        "best": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:15-20",
+          "similarity": 0.967857,
+          "strongFrameProportion": 0.978571,
+          "longestStrongRun": 86,
+          "alignedFrames": 140,
+          "dominantVotes": 181,
+          "evidenceSpan": 219
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.584821,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 7,
+          "evidenceSpan": 2
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic01",
+      "expectedKnown": true,
+      "transformation": "loudnorm",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic01",
+        "reason": null,
+        "margin": 0.32318,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.940625,
+          "strongFrameProportion": 0.88,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 79,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:15-20",
+          "similarity": 0.617445,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic02",
+      "expectedKnown": true,
+      "transformation": "double-transcode",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.327812,
+        "best": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:0-20",
+          "similarity": 0.946562,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 21,
+          "alignedFrames": 100,
+          "dominantVotes": 110,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.61875,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 130,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic03",
+      "expectedKnown": true,
+      "transformation": "gain",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic03",
+        "reason": null,
+        "margin": 0.348507,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:0-20",
+          "similarity": 0.947812,
+          "strongFrameProportion": 0.94,
+          "longestStrongRun": 30,
+          "alignedFrames": 100,
+          "dominantVotes": 113,
+          "evidenceSpan": 137
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.599306,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic04",
+      "expectedKnown": true,
+      "transformation": "mild-eq",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.33017,
+        "best": {
+          "recordingId": "ic04",
+          "segmentId": "ic04:0-20",
+          "similarity": 0.906875,
+          "strongFrameProportion": 0.72,
+          "longestStrongRun": 20,
+          "alignedFrames": 100,
+          "dominantVotes": 48,
+          "evidenceSpan": 129
+        },
+        "runnerUp": {
+          "recordingId": "ic20",
+          "segmentId": "ic20:15-20",
+          "similarity": 0.576705,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 121,
+          "dominantVotes": 3,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic05",
+      "expectedKnown": true,
+      "transformation": "mono",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 8,
+      "decision": {
+        "matched": true,
+        "recordingId": "ic05",
+        "reason": null,
+        "margin": 0.090467,
+        "best": {
+          "recordingId": "ic05",
+          "segmentId": "ic05:0-20",
+          "similarity": 0.940937,
+          "strongFrameProportion": 0.91,
+          "longestStrongRun": 29,
+          "alignedFrames": 100,
+          "dominantVotes": 114,
+          "evidenceSpan": 138
+        },
+        "runnerUp": {
+          "recordingId": "ic08",
+          "segmentId": "ic08:15-20",
+          "similarity": 0.85047,
+          "strongFrameProportion": 0.247312,
+          "longestStrongRun": 4,
+          "alignedFrames": 93,
+          "dominantVotes": 21,
+          "evidenceSpan": 119
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic06",
+      "expectedKnown": true,
+      "transformation": "tone-overlay",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.9375,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:0-20",
+          "similarity": 0.9375,
+          "strongFrameProportion": 0.84,
+          "longestStrongRun": 16,
+          "alignedFrames": 100,
+          "dominantVotes": 115,
+          "evidenceSpan": 138
+        },
+        "runnerUp": null
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "ic07",
+      "expectedKnown": true,
+      "transformation": "noise-overlay",
+      "duration": 20,
+      "retrievalCorrectRank": 1,
+      "retrievalLost": false,
+      "candidateCount": 4,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.255456,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.939375,
+          "strongFrameProportion": 0.9,
+          "longestStrongRun": 15,
+          "alignedFrames": 100,
+          "dominantVotes": 116,
+          "evidenceSpan": 139
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.683919,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 96,
+          "dominantVotes": 4,
+          "evidenceSpan": 4
+        }
+      },
+      "failureReason": "insufficient-evidence"
+    },
+    {
+      "recordingId": "iu01",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.038454,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:15-20",
+          "similarity": 0.606534,
+          "strongFrameProportion": 0.011364,
+          "longestStrongRun": 1,
+          "alignedFrames": 88,
+          "dominantVotes": 2,
+          "evidenceSpan": 4
+        },
+        "runnerUp": {
+          "recordingId": "ic15",
+          "segmentId": "ic15:15-20",
+          "similarity": 0.56808,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu02",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 7,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.002691,
+        "best": {
+          "recordingId": "ic03",
+          "segmentId": "ic03:15-20",
+          "similarity": 0.589418,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 101,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": {
+          "recordingId": "ic10",
+          "segmentId": "ic10:0-20",
+          "similarity": 0.586728,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 89,
+          "dominantVotes": 2,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu03",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 3,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.005441,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:15-20",
+          "similarity": 0.568685,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 96,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": {
+          "recordingId": "ic09",
+          "segmentId": "ic09:15-20",
+          "similarity": 0.563244,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 84,
+          "dominantVotes": 3,
+          "evidenceSpan": 1
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu04",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 5,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.007396,
+        "best": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:15-20",
+          "similarity": 0.549063,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 100,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": {
+          "recordingId": "ic02",
+          "segmentId": "ic02:15-20",
+          "similarity": 0.541667,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 93,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu05",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.022971,
+        "best": {
+          "recordingId": "ic11",
+          "segmentId": "ic11:0-20",
+          "similarity": 0.582074,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": {
+          "recordingId": "ic01",
+          "segmentId": "ic01:0-20",
+          "similarity": 0.559103,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 92,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu06",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 6,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.036241,
+        "best": {
+          "recordingId": "ic07",
+          "segmentId": "ic07:0-20",
+          "similarity": 0.57761,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 91,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": {
+          "recordingId": "ic17",
+          "segmentId": "ic17:15-20",
+          "similarity": 0.541369,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 105,
+          "dominantVotes": 2,
+          "evidenceSpan": 0
+        }
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu07",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.564583,
+        "best": {
+          "recordingId": "ic06",
+          "segmentId": "ic06:15-20",
+          "similarity": 0.564583,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 90,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": null
+      },
+      "failureReason": null
+    },
+    {
+      "recordingId": "iu08",
+      "expectedKnown": false,
+      "transformation": "unknown-mp3-128",
+      "duration": 20,
+      "retrievalCorrectRank": null,
+      "retrievalLost": false,
+      "candidateCount": 1,
+      "decision": {
+        "matched": false,
+        "recordingId": null,
+        "reason": "insufficient-evidence",
+        "margin": 0.574483,
+        "best": {
+          "recordingId": "ic16",
+          "segmentId": "ic16:0-20",
+          "similarity": 0.574483,
+          "strongFrameProportion": 0,
+          "longestStrongRun": 0,
+          "alignedFrames": 133,
+          "dominantVotes": 1,
+          "evidenceSpan": 0
+        },
+        "runnerUp": null
+      },
+      "failureReason": null
+    }
+  ]
+}
