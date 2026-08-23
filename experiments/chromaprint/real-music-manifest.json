@@ -1,0 +1,40 @@
+{
+  "source": {
+    "name": "Ondrosik Free Music Library",
+    "url": "https://ondrosik.sk/music/",
+    "license": "CC0 1.0 Universal",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "appliesTo": "every recording in this manifest",
+    "notes": "The source library states that all listed tracks are under CC0. Audio is downloaded only into the ignored local experiment directory."
+  },
+  "recordings": [
+    { "id": "rm01", "title": "Burnout", "asset": "Burnout.opus", "indexed": true },
+    { "id": "rm02", "title": "City lights at night", "asset": "City%20lights%20at%20night.opus", "indexed": true },
+    { "id": "rm03", "title": "Dancing needles", "asset": "Dancing%20needles.opus", "indexed": true },
+    { "id": "rm04", "title": "Morning meditation", "asset": "Morning%20meditation.opus", "indexed": true },
+    { "id": "rm05", "title": "Night at the old castle", "asset": "Night%20at%20the%20old%20castle.opus", "indexed": true },
+    { "id": "rm06", "title": "Sunlit Groove", "asset": "Sunlit%20Groove.opus", "indexed": true },
+    { "id": "rm07", "title": "Quick Spark", "asset": "Quick%20Spark.opus", "indexed": true },
+    { "id": "rm08", "title": "Quirky Little March", "asset": "Quirky%20Little%20March.opus", "indexed": true },
+    { "id": "rm09", "title": "regret", "asset": "regret.opus", "indexed": true },
+    { "id": "rm10", "title": "Sacrifice in the Temple", "asset": "Sacrifice%20in%20the%20Temple.opus", "indexed": true },
+    { "id": "rm11", "title": "Sanctum Resonance", "asset": "Sanctum%20Resonance.opus", "indexed": true },
+    { "id": "rm12", "title": "Splash Splash", "asset": "Splash%20Splash.opus", "indexed": true },
+    { "id": "rm13", "title": "sunday evening", "asset": "sunday%20evening.opus", "indexed": true },
+    { "id": "rm14", "title": "Calm Before the Storm", "asset": "Calm%20Before%20the%20Storm.opus", "indexed": true },
+    { "id": "rm15", "title": "Waves of Longing", "asset": "Waves%20of%20Longing.opus", "indexed": true },
+    { "id": "rm16", "title": "Forward Momentum", "asset": "Forward%20Momentum.opus", "indexed": true },
+    { "id": "rm17", "title": "At the last minute", "asset": "At%20the%20last%20minute.opus", "indexed": true },
+    { "id": "rm18", "title": "A Bedtime Confession", "asset": "A%20Bedtime%20Confession.opus", "indexed": true },
+    { "id": "rm19", "title": "Between the Lines", "asset": "Between%20the%20Lines.opus", "indexed": true },
+    { "id": "rm20", "title": "Violet Music 2025", "asset": "Violet%20Music%202025.opus", "indexed": true },
+    { "id": "ru01", "title": "breakthrough 2025", "asset": "breakthrough%202025.opus", "indexed": false },
+    { "id": "ru02", "title": "Crystal Snowflakes", "asset": "Crystal%20Snowflakes.opus", "indexed": false },
+    { "id": "ru03", "title": "endless runner", "asset": "endless%20runner.opus", "indexed": false },
+    { "id": "ru04", "title": "Fragile Memories", "asset": "Fragile%20Memories.opus", "indexed": false },
+    { "id": "ru05", "title": "Enchanted Valley", "asset": "Enchanted%20Valley.opus", "indexed": false },
+    { "id": "ru06", "title": "Falling stars", "asset": "Falling%20stars.opus", "indexed": false },
+    { "id": "ru07", "title": "For Ivanka 1", "asset": "For%20Ivanka%201.opus", "indexed": false },
+    { "id": "ru08", "title": "For ivanka 2", "asset": "For%20ivanka%202.opus", "indexed": false }
+  ]
+}
