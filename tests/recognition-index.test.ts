@@ -1,6 +1,7 @@
-import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
+import initSqlJs from "sql.js";
 import { afterEach, describe, expect, it } from "vitest";
 import { FIXED_RECOGNITION_CONFIGURATION, createRecognitionIndex, processMetadata } from "../src";
 import type { RecognitionIndex, RecognitionIndexOpenError } from "../src";
@@ -17,6 +18,14 @@ function temporaryIndexPath(): string {
 function requireIndex(value: RecognitionIndex | RecognitionIndexOpenError): RecognitionIndex {
   if ("error" in value) throw new Error(`${value.error}: ${value.message}`);
   return value;
+}
+
+async function replaceStoredAlgorithm(filePath: string, algorithm: string): Promise<void> {
+  const SQL = await initSqlJs({ locateFile: () => require.resolve("sql.js/dist/sql-wasm.wasm") });
+  const database = new SQL.Database(readFileSync(filePath));
+  database.run("UPDATE fingerprint_segments SET algorithm = ?", [algorithm]);
+  writeFileSync(filePath, database.export());
+  database.close();
 }
 
 afterEach(() => {
@@ -72,6 +81,16 @@ describe("persistent recognition index prototype", () => {
     const unreadable = temporaryIndexPath();
     mkdirSync(unreadable);
     await expect(createRecognitionIndex(unreadable)).resolves.toMatchObject({ error: "index-unreadable" });
+  });
+
+  it("treats an unsupported stored fingerprint algorithm as index corruption", async () => {
+    const filePath = temporaryIndexPath();
+    const index = requireIndex(await createRecognitionIndex(filePath));
+    index.addRecording({ id: "recording-a", artist: "Artist A", title: "Track A" });
+    index.addSegment({ id: "recording-a:0", recordingId: "recording-a", startSeconds: 0, durationSeconds: 20, frames: frames(1) });
+    index.close();
+    await replaceStoredAlgorithm(filePath, "unknown-algorithm");
+    await expect(createRecognitionIndex(filePath)).resolves.toMatchObject({ error: "index-corrupt" });
   });
 
   it("keeps the frozen recognition settings and existing metadata API independent", () => {

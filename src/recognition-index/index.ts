@@ -249,7 +249,8 @@ function recordingFromRow(row: Record<string, unknown>): RecognitionIndexRecordi
 function segmentFromRow(row: Record<string, unknown>): StoredSegment {
   const frames = JSON.parse(String(row.raw_frames));
   if (!Array.isArray(frames) || frames.some((frame) => !Number.isInteger(frame))) throw new Error("Stored fingerprint segment contains invalid frame data.");
-  return { id: String(row.segment_id), recordingId: String(row.recording_id), startSeconds: Number(row.start_seconds), durationSeconds: Number(row.duration_seconds), frames, algorithm: String(row.algorithm) === "chromaprint" ? "chromaprint" : "chromaprint" };
+  if (row.algorithm !== "chromaprint") throw new Error(`Unsupported stored fingerprint algorithm: ${String(row.algorithm)}.`);
+  return { id: String(row.segment_id), recordingId: String(row.recording_id), startSeconds: Number(row.start_seconds), durationSeconds: Number(row.duration_seconds), frames, algorithm: "chromaprint" };
 }
 
 function count(database: Database, table: string): number { return Number(database.exec(`SELECT COUNT(*) AS count FROM ${table}`)[0]?.values[0]?.[0] ?? 0); }

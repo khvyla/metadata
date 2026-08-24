@@ -92,6 +92,8 @@ if (!("error" in opened)) {
 
 This prototype uses local SQLite persistence through `sql.js`, requires no paid recognition API, and is not production-ready. Radio-teacher ingestion, automatic learning, stream capture, and large-scale retrieval remain future work.
 
+`sql.js` is suitable for this local R&D prototype: it loads SQLite in-process and persists by exporting the database file; its storage and scaling architecture is intentionally not final.
+
 Schema version 1 contains `recordings` (ID, optional artist/title/provenance, timestamp) and `fingerprint_segments` (ID, recording ID, start/duration, raw Chromaprint frames, algorithm, frame count, timestamp). Recording and segment IDs are primary keys: repeated ingestion of the same ID is ignored, while `addSegments()` performs a batch transaction. The first prototype rebuilds its in-memory retrieval postings from persisted segments when opened.
 
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.

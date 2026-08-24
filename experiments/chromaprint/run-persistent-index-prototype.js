@@ -15,6 +15,7 @@ const indexPath = join(outputRoot, "prototype.sqlite");
 const manifest = JSON.parse(readFileSync(join(root, "independent-corpus-manifest.json"), "utf8"));
 const indexed = manifest.recordings.filter((recording) => recording.indexed).slice(0, 10);
 const unknown = manifest.recordings.filter((recording) => !recording.indexed).slice(0, 3);
+const minimumKnownRecognitionRate = 0.5;
 
 async function frames(name) {
   const { stdout } = await exec("fpcalc", ["-raw", join(corpusRoot, name)], { timeout: 10_000, maxBuffer: 128 * 1024 });
@@ -43,7 +44,7 @@ function report(result) {
     "",
     "## Recognition",
     "",
-    `- Known transformed queries matched: ${result.known.matched}/${result.known.total}.`,
+    `- Known transformed queries matched: ${result.known.matched}/${result.known.total} (${pct(result.known.recognitionRate)}; acceptance minimum ${pct(result.known.minimumRecognitionRate)}).`,
     `- Unknown queries rejected: ${result.unknown.rejected}/${result.unknown.total}.`,
     `- Median recognition query time: ${result.medianRecognitionQueryMs.toFixed(3)} ms.`,
     `- Known query record IDs: ${result.known.rows.map((row) => row.recordingId).join(", ")}.`,
@@ -95,10 +96,10 @@ async function main() {
     indexFileSizeBytes: statSync(indexPath).size,
     reopenedStats: reopened.getStats(),
     medianRecognitionQueryMs: median(queryTimes),
-    known: { total: knownRows.length, matched: knownRows.filter((row) => row.matched).length, rows: knownRows },
+    known: { total: knownRows.length, matched: knownRows.filter((row) => row.matched).length, recognitionRate: knownRows.filter((row) => row.matched).length / knownRows.length, minimumRecognitionRate: minimumKnownRecognitionRate, rows: knownRows },
     unknown: { total: unknownRows.length, rejected: unknownRows.filter((row) => row.rejected).length, rows: unknownRows },
   };
-  result.accepted = result.reopenedStats.recordingCount === indexed.length && result.reopenedStats.segmentCount === indexed.length * 2 && result.known.matched > 0 && result.unknown.rejected === result.unknown.total;
+  result.accepted = result.reopenedStats.recordingCount === indexed.length && result.reopenedStats.segmentCount === indexed.length * 2 && result.known.recognitionRate >= result.known.minimumRecognitionRate && result.unknown.rejected === result.unknown.total;
   reopened.close();
   writeFileSync(join(root, "persistent-index-prototype-results.json"), `${JSON.stringify(result, null, 2)}\n`);
   writeFileSync(join(root, "persistent-index-prototype-report.md"), report(result));

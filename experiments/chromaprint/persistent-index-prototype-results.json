@@ -1,17 +1,19 @@
 {
-  "generatedAt": "2026-08-24T06:43:34.397Z",
+  "generatedAt": "2026-08-24T07:23:12.969Z",
   "indexFileSizeBytes": 73728,
   "reopenedStats": {
     "schemaVersion": 1,
     "recordingCount": 10,
     "segmentCount": 20,
-    "openLoadMs": 1.694,
-    "retrievalRebuildMs": 1.397
+    "openLoadMs": 1.616,
+    "retrievalRebuildMs": 1.309
   },
-  "medianRecognitionQueryMs": 2.4913999999999987,
+  "medianRecognitionQueryMs": 2.349899999999934,
   "known": {
     "total": 10,
     "matched": 7,
+    "recognitionRate": 0.7,
+    "minimumRecognitionRate": 0.5,
     "rows": [
       {
         "recordingId": "ic01",
