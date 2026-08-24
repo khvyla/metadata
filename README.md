@@ -74,6 +74,26 @@ const fingerprint = capability.available
 
 Fingerprint generation is independent from parsing, stream reading, resolution, and airplay-quality assessment. It never automatically associates a fingerprint with station metadata.
 
+### Persistent Recognition Index prototype
+
+The R&D-only persistent Recognition Index stores recording identity separately from time-indexed raw Chromaprint segments in a local SQLite file. It rebuilds the fixed validated retrieval model on open, uses the frozen Top-5/matcher confidence rule, and is explicitly invoked; it is not connected to `resolveMetadata()`.
+
+```ts
+import { createRecognitionIndex } from "@khvyla/metadata";
+
+const opened = await createRecognitionIndex("./khvyla-index.sqlite");
+if (!("error" in opened)) {
+  opened.addRecording({ id: "recording-1", artist: "Stan Getz", title: "Misty" });
+  opened.addSegment({ id: "recording-1:0", recordingId: "recording-1", startSeconds: 0, durationSeconds: 20, frames: rawChromaprintFrames });
+  const result = opened.recognize(queryRawChromaprintFrames);
+  opened.close();
+}
+```
+
+This prototype uses local SQLite persistence through `sql.js`, requires no paid recognition API, and is not production-ready. Radio-teacher ingestion, automatic learning, stream capture, and large-scale retrieval remain future work.
+
+Schema version 1 contains `recordings` (ID, optional artist/title/provenance, timestamp) and `fingerprint_segments` (ID, recording ID, start/duration, raw Chromaprint frames, algorithm, frame count, timestamp). Recording and segment IDs are primary keys: repeated ingestion of the same ID is ignored, while `addSegments()` performs a batch transaction. The first prototype rebuilds its in-memory retrieval postings from persisted segments when opened.
+
 Public API: `detectMetadata`, `parseMetadata`, `normalizeMetadata`, `convertMetadata`, `processMetadata`, and `registerParser`. `processMetadata(input, { output: "icy" })` converts directly.
 
 Run the small CLI with `npm run cli -- "Miles Davis - So What"`, or pipe input to it.

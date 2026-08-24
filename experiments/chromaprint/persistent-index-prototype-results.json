@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-08-24T06:43:34.397Z",
+  "indexFileSizeBytes": 73728,
+  "reopenedStats": {
+    "schemaVersion": 1,
+    "recordingCount": 10,
+    "segmentCount": 20,
+    "openLoadMs": 1.694,
+    "retrievalRebuildMs": 1.397
+  },
+  "medianRecognitionQueryMs": 2.4913999999999987,
+  "known": {
+    "total": 10,
+    "matched": 7,
+    "rows": [
+      {
+        "recordingId": "ic01",
+        "matched": true
+      },
+      {
+        "recordingId": "ic02",
+        "matched": true
+      },
+      {
+        "recordingId": "ic03",
+        "matched": true
+      },
+      {
+        "recordingId": "ic04",
+        "matched": true
+      },
+      {
+        "recordingId": "ic05",
+        "matched": true
+      },
+      {
+        "recordingId": "ic06",
+        "matched": false
+      },
+      {
+        "recordingId": "ic07",
+        "matched": true
+      },
+      {
+        "recordingId": "ic08",
+        "matched": true
+      },
+      {
+        "recordingId": "ic09",
+        "matched": false
+      },
+      {
+        "recordingId": "ic10",
+        "matched": false
+      }
+    ]
+  },
+  "unknown": {
+    "total": 3,
+    "rejected": 3,
+    "rows": [
+      {
+        "recordingId": "iu01",
+        "rejected": true,
+        "reason": "insufficient-evidence"
+      },
+      {
+        "recordingId": "iu02",
+        "rejected": true,
+        "reason": "insufficient-evidence"
+      },
+      {
+        "recordingId": "iu03",
+        "rejected": true,
+        "reason": "insufficient-evidence"
+      }
+    ]
+  },
+  "accepted": true
+}
