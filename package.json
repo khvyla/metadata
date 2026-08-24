@@ -6,17 +6,24 @@
   "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "cli": "npm run build --silent && node dist/cli.js",
-    "experiment:independent-corpus": "node experiments/chromaprint/run-independent-corpus.js"
+    "experiment:independent-corpus": "node experiments/chromaprint/run-independent-corpus.js",
+    "prototype:recognition-index": "npm run build --silent && node experiments/chromaprint/run-persistent-index-prototype.js"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
+    "@types/sql.js": "^1.4.11",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "sql.js": "^1.14.2"
   }
 }
